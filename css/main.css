@@ -1,0 +1,138 @@
+/*
+Couples Resort Responsive Build
+4 column grid as per XD file
+ */
+
+/* 
+    CSS Guide 
+
+    1.  General Styles
+    2.  Main Nav
+    3.  Main Hero Image
+    4.  Introduction for each rooms 
+    5.  Amenities for all rooms
+    6.  Footer 
+ */
+
+/* 1. ---General Styles--- */
+
+#mobile-outline {
+  max-width: 412px;
+  /* TRBL  */
+  margin: 20px auto 20px auto;
+}
+
+body {
+  color: #626262;
+  font-family: "Sanchez", "Times New Roman", serif;
+}
+
+a {
+  text-decoration: none;
+  /* animation */
+}
+
+input,
+textarea {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.cr-red {
+  color: #9a2018;
+}
+
+/* 2. ---Main Nav--- */
+
+#main-nav label img {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-bottom: 20px;
+}
+
+#logo {
+  margin-bottom: 20px;
+  max-width: 382px;
+}
+
+/* 3. ---Main Hero Image--- */
+
+#hero {
+  height: 200px;
+  background: url(../images/hero-main.jpg) no-repeat;
+}
+
+.book-now {
+  background-color: #9a2018;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.book-now:hover {
+  background-color: rgb(196, 28, 28);
+}
+
+#book-now-hero {
+  height: 67px;
+}
+
+.hero-img-h2,
+.hero-img-h3 {
+  background-color: #fff;
+  font-size: 14px;
+  padding: 20px 25px;
+}
+
+.line-separator {
+  margin-top: 20px;
+  border-top: solid 3px #cf6666;
+  padding-top: 20px;
+}
+
+#hero-summary p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+/* 4. ---Introduction for each rooms--- */
+
+/* 5. ---Amenities for all rooms--- */
+
+/* 6. ---Footer--- */
+
+#footer-hero {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 40px;
+  padding-bottom: 80px;
+}
+
+#footer-hero h3 {
+  margin-top: 30px;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+#footer-privacy .line-seperator {
+  margin-top: 0px;
+}
+
+#footer-contact-info h3 {
+  font-size: 23px;
+}
+
+#footer-contact-info p {
+  margin-bottom: 20px;
+  line-height: 18px;
+  font-size: 11px;
+}
