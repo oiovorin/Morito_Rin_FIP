@@ -20,9 +20,14 @@
     <div id="mobile-outline">
       <h1 class="hidden">Welcome to The Couples Resort</h1>
       <!-- Main Nav -->
-      <header id="main-header" class="grid-con">
+      <header class="grid-con" id="main-header">
         <nav id="main-nav" class="col-span-full">
           <h2 class="hidden">Main Navigation</h2>
+
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger">
+            <img src="images/burger.svg" alt="hamburger menu icon" />
+          </label>
 
           <div id="burger-con">
             <ul>
@@ -40,12 +45,12 @@
         </div>
       </header>
       <!-- Main Hero -->
-      <section id="hero">
+      <section id="hero" class="grid-con">
         <h2 class="hidden">Book a stay with us</h2>
-        <div id="book-now-hero" class="book-now">
+        <div id="book-now-hero" class="book-now col-start-3 col-span-2">
           <p>Book Now</p>
         </div>
-        <section id="hero-heading-box">
+        <section id="hero-heading-box" class="col-span-full">
           <h2 class="hero-img-h2">
             <span>Couples Resort</span><br />
             Room Styles
@@ -54,7 +59,7 @@
       </section>
 
       <div class="grid-con">
-        <section id="hero-summary" class="line-separator">
+        <section id="hero-summary" class="col-span-full line-separator">
           <h2 class="hidden">Summary of our Rooms</h2>
           <p>
             Experience Old European luxury with private gazebos, outdoor hot
@@ -65,7 +70,7 @@
           </p>
         </section>
       </div>
-
+      <!-- Room introduction -->
       <div class="grid-con">
         <section class="rooms, room-odd, col-span-full">
           <img src="images/mob_RM-room-01.jpg" alt="chateus image" />
@@ -77,7 +82,8 @@
             away while enjoying views of spectacular scenery overlooking
             sparkling Galeairy Lake onto the romantic forests of Algonquin Park.
           </p>
-          <div class="book-room">
+
+          <div class="book-room col-start-2">
             <p>Book Room</p>
           </div>
         </section>
@@ -95,7 +101,7 @@
             waves on the shores edge, watch the trees sway with the breeze and
             breath again.
           </p>
-          <div class="book-room">
+          <div class="book-room col-start-3">
             <p>Book Room</p>
           </div>
         </section>

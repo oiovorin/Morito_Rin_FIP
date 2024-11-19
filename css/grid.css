@@ -45,6 +45,7 @@ h5 {
 .col-start-4 {
   grid-column-start: 4;
 }
+
 /* column-end */
 .col-end-2 {
   grid-column-start: 2;
