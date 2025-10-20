@@ -82,3 +82,50 @@
     }
 
 }
+
+#about {
+    margin: 90px 0;
+    
+    a {
+        color: #000;
+        text-decoration: none;
+        &:hover {
+            transform: scale(1.03);
+            transition: transform 0.2s ease-in-out;
+        }
+
+    #about-card {
+        height: 465px;
+        border: 2px solid abstracts.$rich-black;
+        border-radius: 30px;
+        margin: 0 auto;
+
+        img {
+            height: 260px;
+            background-color: #616161;
+        }
+
+        h3 {
+            font-size: 36px;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            margin-top: 300px;// for now delete this when image ready
+        }
+
+        p {
+            margin: 0 20px;
+        }
+    }
+    }
+}
+
+@media screen and (min-width:768px) {
+    #about {
+        #about-card {
+            height: 520px;
+        }
+    }
+    
+}
