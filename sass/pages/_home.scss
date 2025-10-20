@@ -126,6 +126,10 @@
 
     #my-skills {
 
+        h3 {
+            margin-right: 90px;
+        }
+
         #skill-con {
         display: flex;
         justify-content: space-between;
@@ -151,6 +155,14 @@
 }
 
 @media screen and (min-width:1200px) {
+
+    #my-skills {
+
+        h3 {
+            margin-right: 80px;
+        }
+    }
+
     #work-garllery {
         #work-gallery-con {
             width: auto;
