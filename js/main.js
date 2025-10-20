@@ -38,3 +38,5 @@ function preCard () {
 
 nextBtn.addEventListener("click", nextCard);
 preBtn.addEventListener("click", preCard);
+
+updateCard();

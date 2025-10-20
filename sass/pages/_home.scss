@@ -31,6 +31,7 @@
         text-align: center;
         margin-top: 70px;
         margin-bottom: 50px;
+        text-transform: uppercase;
     }
 
     .work-card {
@@ -47,9 +48,9 @@
         justify-content: center;
         gap: 20px;
         overflow: hidden;
-        height: 420px;
-        width: 340px;
         margin: 0 auto;
+        width: max-content;
+        height: 420px;
     }
 
     #work1 {
@@ -95,7 +96,7 @@
         }
 
     #about-card {
-        height: 465px;
+        height: max-content;
         border: 2px solid abstracts.$rich-black;
         border-radius: 30px;
         margin: 0 auto;
@@ -122,6 +123,34 @@
 }
 
 @media screen and (min-width:768px) {
+    #work-garllery {
+        #work-gallery-con {
+            width: auto;
+            height: auto;
+            .work-card {
+                height: 415px;
+                width: 600px;
+            }
+        }
+    }
+    #about {
+        #about-card {
+            height: 520px;
+        }
+    }
+    
+}
+
+@media screen and (min-width:1200px) {
+    #work-garllery {
+        #work-gallery-con {
+            width: auto;
+            .work-card {
+                height: 510px;
+                width: 765px;
+            }
+        }
+    }
     #about {
         #about-card {
             height: 520px;
