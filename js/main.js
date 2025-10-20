@@ -1,3 +1,13 @@
+// header navigation close
+const hamburger = document.querySelector('#hamburger');
+const navLinks = document.querySelectorAll('#header-nav nav ul li a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.checked = false;
+  });
+})
+
 // work gallery slide
 const container = document.querySelector('#work-gallery-con');
 const workCards = document.querySelectorAll('.work-card');
