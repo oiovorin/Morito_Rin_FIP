@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Morito Rin Portfolio Homepage</title>
 </head>
 <body>
@@ -35,6 +36,85 @@
             </div>
         </div>
     </header>
+
+    <section id="my-skills" class="grid-con">
+        <h2 class="hidden">Passion title</h2>
+        <h3 class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-9">Creating Visual Stories that move and code that connects.</h3>
+        <div id="skill-con" class="col-span-full m-col-start-2 m-col-end-12">
+            <div class="skill">
+                <h4>01 Branding</h4>
+                <p>Logo Creation<br>
+                   Visual Identity<br>
+                   Brand Guideline</p>
+            </div>
+            <div class="skill">
+                <h4>02 Motion</h4>
+                <p>Modeliing<br>
+                   Brand Mockup<br>
+                   Poster Production</p>
+            </div>
+            <div class="skill">
+                <h4>03 Developing</h4>
+                <p>Responsive Web Design<br>
+                   Front-End Development<br>
+                   Web Animation</p>
+            </div>
+        </div>
+
     
+    </section>
+
+    <section id="work-garllery" class="grid-con">
+        <h2 class="hidden">homepage work gallery</h2>
+        <h3 class="col-span-full">Work</h3>
+        <div id="work-gallery-con" class="col-span-full">
+            <div class="work-card" id="work1">
+                <img src="images/work1.jpeg" alt="project 1 image">
+            </div>
+            <div class="work-card" id="work2">
+                <img src="images/work1.jpeg" alt="project 2 image">
+            </div>
+            <div class="work-card" id="work3">
+                <img src="images/work1.jpeg" alt="project 3 image">
+            </div>
+        </div>
+
+        <div id="arrow" class="col-span-full">
+          <button id="previous">&larr;</button>
+          <button id="next">&#8594;</button>
+        </div>
+    </section>
+
+    <section id="about" class="grid-con">
+        <h2 class="hidden">about card</h2>
+        <a href="about.html" class="col-span-full m-col-start-2 l-col-end-12 l-col-start-2 m-col-end-12">
+        <div id="about-card">
+            <img src="images/about.jpeg" alt="image for about card">
+            <h3>About</h3>
+            <p>Graphic and Motion Designer, Front-End Developer.</p>
+        </div>
+        </a>
+    </section>
+
+    <footer>
+        <div class="grid-con">
+            <div class="col-span-full m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="logo" id="footer-logo">
+                </a>
+                <p id="footer-text">From sketch to screen, I make it move.</p>
+            </div>
+            
+            <nav id="footer-nav" class="col-span-full m-col-start-8 m-col-end-13 l-col-start-7 l-col-end-13">
+                <ul>
+                    <li><a href="#event-itinerary">TOP</a></li>
+                    <li><a href="#project-exhibition">WORKS</a></li>
+                    <li><a href="#program">ABOUT</a></li>
+                    <li><a href="#highfive-portfolio">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
