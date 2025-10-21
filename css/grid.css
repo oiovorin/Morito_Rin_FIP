@@ -56,8 +56,12 @@ body, p, h1, h2, h3, h4, h5 {
    grid-column-gap: 30px;
    max-width: 1200px;
    margin: 0 auto;
-   padding-left: 15px;
-   padding-right: 15px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.full-width-grid-con > .grid-con {
+  grid-column: 2 / 3;
 }
 
 /* A keyword indicating that the property contributes nothing to the grid item's placement, indicating auto-placement, an automatic span, or a default span of 1. */

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <title>Morito Rin Portfolio Homepage</title>
 </head>
 <body>
@@ -37,32 +38,88 @@
         </div>
     </header>
 
-    <section id="my-skills" class="grid-con">
-        <h2 class="hidden">Passion title</h2>
-        <h3 class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-9">Creating Visual Stories that move and code that connects.</h3>
-        <div id="skill-con" class="col-span-full m-col-start-2 m-col-end-12">
-            <div class="skill">
-                <h4>01 Branding</h4>
-                <p>Logo Creation<br>
-                   Visual Identity<br>
-                   Brand Guideline</p>
-            </div>
-            <div class="skill">
-                <h4>02 Motion</h4>
-                <p>Modeliing<br>
-                   Brand Mockup<br>
-                   Poster Production</p>
-            </div>
-            <div class="skill">
-                <h4>03 Developing</h4>
-                <p>Responsive Web Design<br>
-                   Front-End Development<br>
-                   Web Animation</p>
-            </div>
-        </div>
+    <section id="my-skills" class="full-width-grid-con">
+  <div class="grid-con">
+    <h2 class="hidden">Passion title</h2>
+    <h3 class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-9">
+      Creating Visual Stories that move and code that connects.
+    </h3>
 
-    
+    <div id="skill-con" class="col-span-full m-col-start-2 m-col-end-12">
+      <div class="skill">
+        <div class="skill-title">
+            <h4>01</h4>
+            <h4>Branding</h4>
+        </div>
+        
+        <div>        
+        <p>Logo Creation<br>
+          Visual Identity<br>
+          Brand Guideline
+        </p>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">
+            <h4>02</h4>
+            <h4>Motion</h4>
+        </div>
+        
+        <div>        
+        <p>Modeliing<br>
+          Brand Mockup<br>
+          Poster Production
+        </p>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">
+            <h4>03</h4>
+            <h4>Developing</h4>
+        </div>
+        
+        <div>        
+        <p>Responsive Web Design<br>
+          Front-End Development<br>
+          Web Animation
+        </p>
+        </div>
+      </div>
+    </div>
+
+    <section id="player-container" class="col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
+      <video controls preload="metadata" poster="images/placeholder.jpg">
+        <source src="videos/intro.mp4" type="video/mp4">
+        <source src="videos/intro.webm" type="video/webm">
+        <p>You are using an older browser that does not support HTML5 Video. Please update your browser.</p>
+      </video>
+
+      <button id="center-play-button">
+        <i class="fa-solid fa-circle-play"></i>
+      </button>
+
+      <div class="video-controls hidden" id="video-controls">
+        <button id="play-button">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="pause-button">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button id="stop-button">
+          <i class="fa-solid fa-stop"></i>
+        </button>
+        <i class="fa fa-volume-up"></i>
+        <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+        <button id="full-screen">
+          <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+        </button>
+      </div>
     </section>
+  </div>
+</section>
+
 
     <section id="work-garllery" class="grid-con">
         <h2 class="hidden">homepage work gallery</h2>
