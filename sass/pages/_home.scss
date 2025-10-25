@@ -17,12 +17,12 @@
         font-weight: 600;
     }
 
-    #skill-con .skill h4 {
+    #skill-con .skill p.num_name {
         font-size: 20px;
         text-transform: uppercase;
     }
 
-    .skill-title h4:first-child {
+    .skill-title p.num_name:first-child {
         width: 20px;
 }
 
@@ -38,7 +38,7 @@
         gap: 40px;
     }
 
-    #skill-con .skill p {
+    #skill-con .skill p.skill_list {
         margin-top: 10px;
         margin-left: 61px;
     }
