@@ -1,3 +1,4 @@
+(function() {
 // header navigation close
 const hamburger = document.querySelector('#hamburger');
 const navLinks = document.querySelectorAll('#header-nav nav ul li a');
@@ -120,3 +121,5 @@ videoControls.addEventListener("mouseenter", showControls);
 videoControls.addEventListener("mouseleave", hideControls);
 player.addEventListener("mouseenter", showControls);
 player.addEventListener("mouseleave", hideControls);
+
+})();
