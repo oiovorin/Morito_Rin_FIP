@@ -1,7 +1,7 @@
 # The Portfolio of Rin Morito – Interactive Media Designer & Developer🎨💻
 
 Welcome to my personal portfolio repository!  
-This portfolio showcases my work, skills, and creative journey as an **Interactive Media Design student** at Fanshawe College.  
+This portfolio showcases my work, skills, and creative journey.  
 Here, you’ll find a collection of projects that highlight my strengths in **web design, front-end development, motion graphics, and UI/UX**.
 
 ---
@@ -17,18 +17,10 @@ Here, you’ll find a collection of projects that highlight my strengths in **we
 ---
 
 ## 👩🏻‍💻 About
-This portfolio was created to demonstrate my **technical and creative growth** through various projects in the Interactive Media Design program.  
-Each project reflects my **design thinking**, **problem-solving process**, and **ability to combine visuals with functionality**.  
+This portfolio was designed and developed to showcase my skills as an **Interactive Designer & Developer**.
+It represents my passion for combining visual design, interactivity, and user-centered thinking to create meaningful digital experiences.
 
 My goal is to design and develop visually appealing, responsive, and interactive web experiences that effectively tell a story.
-
----
-
-## 🎓 Courses & Professors
-- **MMED-3040-(01-02)-25F Web Development 2** — *Justin Brunner*  
-- **MMED-3039-(01-02)-25F Multimedia Authoring** — *Marco De Luca*  
-- **MMED-3038-(01)-25F Electronic Image Production** — *Jarrod Osterback*  
-- **MMED-1058-(01)-25F Motion Design 2** — *Joe Kormendi*  
 
 ---
 
@@ -39,6 +31,7 @@ Here’s an overview of the skills showcased in this portfolio:
 - HTML5  
 - CSS3  
 - JavaScript  
+- Sass
 
 ### 🧰 Design Tools
 - Figma  
@@ -65,7 +58,7 @@ Here’s an overview of the skills showcased in this portfolio:
 ---
 
 ## 🛠️ Technologies & Tools
-- **Web:** HTML5, CSS3, JavaScript  
+- **Web:** HTML5, CSS3, JavaScript, Sass, IIFE, PHP, Greensock
 - **Design:** Figma, Adobe Illustrator, Photoshop  
 - **Multimedia:** Adobe After Effects, Premiere Pro  
 - **Other:** GitHub (version control)  
