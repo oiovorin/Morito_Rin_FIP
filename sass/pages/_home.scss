@@ -1,5 +1,11 @@
 @use '../abstracts';
 
+#hero {
+    background-color: rgba(128, 128, 128, 0.379);
+    height: 500px;
+    margin-bottom: 70px;
+}
+
 #my-skills {
     background-color: abstracts.$rich-black;
     color: #fff;
@@ -11,18 +17,154 @@
         font-weight: 600;
     }
 
-    #skill-con .skill h4 {
-        font-size: 18px;
+    #skill-con .skill p.num_name {
+        font-size: 20px;
+        text-transform: uppercase;
     }
 
-    #skill-con .skill p {
-        margin-top: 10px;
-    }
+    .skill-title p.num_name:first-child {
+        width: 20px;
+}
 
     .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         margin: 40px 0;
     }
+
+    .skill-title {
+        display: flex;
+        gap: 40px;
+    }
+
+    #skill-con .skill p.skill_list {
+        margin-top: 10px;
+        margin-left: 61px;
+    }
+
+
+    #player-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0;
 }
+
+video {
+    border-radius: 15px;
+}
+
+#center-play-button {
+    position: absolute;
+    top: 45%;
+    left: 41%;
+}
+
+#center-play-button .fa-circle-play {
+  font-size: 45px;
+  color: abstracts.$rich-black;
+}
+
+.video-controls.hidden {
+  display: none;
+}
+
+.video-controls {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.video-controls.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.fa, .fa-solid {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.fa-volume-up {
+    margin-left: auto;/* take up the room as mush as it can */
+}
+
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 11.5rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #fff4e4;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -4px; /* Centers thumb on the track */
+  background-color: #808080;
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #808080;
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #fff4e4;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #808080;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb{
+  outline: 3px solid #808080;
+  outline-offset: 0.125rem;
+}
+
+}
+
+
 
 #work-garllery {
     h3 {
@@ -123,10 +265,30 @@
 }
 
 @media screen and (min-width:768px) {
+
+    #my-skills {
+
+        h3 {
+            margin-right: 90px;
+        }
+
+        #skill-con {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #center-play-button {
+    top: 45%;
+    left: 45%;
+}
+    }
+
     #work-garllery {
+        
         #work-gallery-con {
             width: auto;
             height: auto;
+
             .work-card {
                 height: 415px;
                 width: 600px;
@@ -142,6 +304,14 @@
 }
 
 @media screen and (min-width:1200px) {
+
+    #my-skills {
+
+        h3 {
+            margin-right: 80px;
+        }
+    }
+
     #work-garllery {
         #work-gallery-con {
             width: auto;
@@ -151,7 +321,9 @@
             }
         }
     }
+
     #about {
+
         #about-card {
             height: 520px;
         }
