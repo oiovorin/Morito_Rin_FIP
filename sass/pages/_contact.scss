@@ -1,1 +1,63 @@
 @use '../abstracts';
+
+#contact h3 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    margin: 50px auto;
+}
+
+#contactform-box {
+    border: 2px solid #000;
+    border-radius: 15px;
+    text-transform: uppercase;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#contactform-box input {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+#contactform-box textarea {
+    width: 100%;
+}
+
+#contactform-box  p {
+    margin: 10px 0;
+}
+
+.input-title {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+label.option {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    text-transform: none;
+}
+
+#contactform-box input[type="checkbox"] {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin: 10px 5px 15px 5px;
+  accent-color: #000; 
+}
+
+#offer-option {
+    margin-bottom: 30px;
+}
+
+#submit-btn {
+    background-color: #7D7D7D;
+    color: #fff;
+    margin: 0 auto;
+}
+

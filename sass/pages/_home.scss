@@ -1,5 +1,11 @@
 @use '../abstracts';
 
+#hero {
+    background-color: rgba(128, 128, 128, 0.379);
+    height: 500px;
+    margin-bottom: 70px;
+}
+
 #my-skills {
     background-color: abstracts.$rich-black;
     color: #fff;
@@ -11,12 +17,12 @@
         font-weight: 600;
     }
 
-    #skill-con .skill h4 {
+    #skill-con .skill p.num_name {
         font-size: 20px;
         text-transform: uppercase;
     }
 
-    .skill-title h4:first-child {
+    .skill-title p.num_name:first-child {
         width: 20px;
 }
 
@@ -32,7 +38,7 @@
         gap: 40px;
     }
 
-    #skill-con .skill p {
+    #skill-con .skill p.skill_list {
         margin-top: 10px;
         margin-left: 61px;
     }
