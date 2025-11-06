@@ -1,0 +1,66 @@
+@use '../abstracts'; 
+
+#about-me {
+    h3 {
+        font-size: 50px;
+        font-weight: 900;
+        margin: 50px 0;
+    }
+
+    h3.introduce {
+        font-size: 24px;
+    }
+
+    #about-img {
+        height: 250px;
+        background-color: rgba(128, 128, 128, 0.379);
+        border-radius: 5px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #about-me {
+    h3 {
+        font-size: 96px;
+        font-weight: 900;
+        margin: 80px 0;
+    }
+    
+    #about-img {
+        height: 305px;
+        background-color: rgba(128, 128, 128, 0.379);
+        border-radius: 5px;
+        margin-bottom: 60px;
+    }
+
+    p {
+        margin-bottom: 80px;
+    }
+}
+}
+
+@media screen and (min-width:1200px) {
+    #about-me {
+    h3 {
+        font-size: 128px;
+        font-weight: 900;
+        margin: 100px 0;
+    }
+    
+    #about-img {
+        height: 350px;
+        background-color: rgba(128, 128, 128, 0.379);
+        border-radius: 5px;
+        margin-bottom: 80px;
+    }
+
+    p {
+        margin-bottom: 100px;
+    }
+}
+}

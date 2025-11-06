@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>Morito Rin Portfolio Homepage</title>
+    <title>Morito Rin Portfolio Contact</title>
 </head>
 <body>
     <header>
+        <h1 class="hidden">Rin Morito Portofolio Contact Page</h1>
         <div class="grid-con">
+            <h2 class="hidden">Header Navigation</h2>
             <a href="index.html" class="col-start-1 col-span-1 m-col-start-1 m-col-end-2">
                 <img src="images/logo.svg" alt="logo" id="header-logo">
             </a>
@@ -39,22 +41,29 @@
     </header>
 
     <section id="contact" class="grid-con">
-        <h2 class="col-span-full">Contact</h2>
-        <div id="contactform-box" class="col-span-full m-col-start-3 m-col-end-11 l-colspan-full">
+
+        <h2 class="hidden">Contact form</h2>
+        <h3 class="col-span-full">Contact</h3>
+        <div id="contactform-box" class="col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">
             <form action="/action_page.php">
 
+                <h4 class="hidden">First name input</h4>
                 <label for="fname" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">First name</label>
                 <input type="text" id="fname" name="fname">
 
-                <label for="lname" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-7 l-col-end-12">Last name</label>
+                <h4 class="hidden">Last name input</h4>
+                <label for="lname" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">Last name</label>
                 <input type="text" id="lname" name="lname">
 
-                <label for="phone" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-4 l-col-end-10">Phone number</label>
+                <h4 class="hidden">Phone number input</h4>
+                <label for="phone" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">Phone number</label>
                 <input type="text" id="phone" name="phone">
 
-                <label for="email" class="input-title col-span-full m-col-start-3 m-col-end-11">Email</label>
+                <h4 class="hidden">Email input</h4>
+                <label for="email" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">Email</label>
                 <input type="text" id="email" name="email">
 
+                <h4 class="hidden">Offer option checkbox</h4>
                 <div id="offer-option">
                 <p class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-4 l-col-end-10">What I offer</p>
                 <input type="checkbox" id="offer1" name="offer1" value="Branding">
@@ -67,6 +76,8 @@
                 <label for="offer4" class="option last-option">Others</label><br>
                 </div>
 
+
+                <h4 class="hidden">Message input</h4>
                 <label for="message" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-4 l-col-end-10">Message</label>
                 <textarea id="message" name="message" rows="12" cols="50"></textarea>
 
@@ -77,6 +88,7 @@
 
     <footer>
         <div class="grid-con">
+            <h2 class="hidden">Footer Navigation</h2>
             <div class="col-span-full m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">
                 <a href="index.html">
                     <img src="images/logo.svg" alt="logo" id="footer-logo">
@@ -87,9 +99,9 @@
             <nav id="footer-nav" class="col-span-full m-col-start-8 m-col-end-13 l-col-start-7 l-col-end-13">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="work.html">WORKS</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="work.html">WORK</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
