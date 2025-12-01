@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <?php
+    // browser rpoerting, turn off when we lalunch
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+
+    ?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Morito Rin Portfolio Contact</title>
+</head>
+<body>
+    <header>
+        <h1 class="hidden">Rin Morito Portofolio Contact Page</h1>
+        <div class="grid-con">
+            <h2 class="hidden">Header Navigation</h2>
+            <a href="index.html" class="col-start-1 col-span-1 m-col-start-1 m-col-end-2">
+                <img src="images/logo.svg" alt="logo" id="header-logo">
+            </a>
+
+
+            <input type="checkbox" id="hamburger">
+            <div id="mob-menu" class="col-start-4 col-end-5 m-col-auto">
+            <label for="hamburger" id="menu-show">
+                <img src="images/menu-bar.svg" alt="hamburger menu bar" class="hamburger-menu-bar">
+            </label>
+            </div>
+
+            <div id="header-nav" class="m-col-start-4 m-col-end-13 l-col-start-5 l-col-end-13">
+                <label for="hamburger" id="header-nav-close">X</label>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="work.html">WORKS</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="contact" class="grid-con">
+
+        <h2 class="hidden">Contact form</h2>
+        <h3 class="col-span-full">Contact</h3>
+        <div id="contactform-box" class="col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">
+            <?phpif(isset($_GET['msg'])) {
+    echo htmlspecialchars($_GET['msg'], ENT_QUOTES, 'UTF-8');
+}
+
+?>
+            <form action="/action_page.php">
+
+                <h4 class="hidden">First name input</h4>
+                <label for="fname" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">First name</label>
+                <input type="text" id="fname" name="fname">
+
+                <h4 class="hidden">Last name input</h4>
+                <label for="lname" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">Last name</label>
+                <input type="text" id="lname" name="lname">
+
+                <h4 class="hidden">Phone number input</h4>
+                <label for="phone" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">Phone number</label>
+                <input type="text" id="phone" name="phone">
+
+                <h4 class="hidden">Email input</h4>
+                <label for="email" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">Email</label>
+                <input type="text" id="email" name="email">
+
+                <h4 class="hidden">Offer option checkbox</h4>
+                <div id="offer-option">
+                <p class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-4 l-col-end-10">What I offer</p>
+                <input type="checkbox" id="offer1" name="offer1" value="Branding">
+                <label for="offer1" class="option">Branding</label><br>
+                <input type="checkbox" id="offer2" name="offer2" value="Web Design">
+                <label for="offer2" class="option">Web Design</label><br>
+                <input type="checkbox" id="offer3" name="offer3" value="Web Development">
+                <label for="offer3" class="option">Web Development</label><br>
+                <input type="checkbox" id="offer4" name="others" value="others">
+                <label for="offer4" class="option last-option">Others</label><br>
+                </div>
+
+
+                <h4 class="hidden">Message input</h4>
+                <label for="message" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-4 l-col-end-10">Message</label>
+                <textarea id="message" name="message" rows="12" cols="50"></textarea>
+
+                <input type="submit" value="Submit" id="submit-btn">
+</form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="grid-con">
+            <h2 class="hidden">Footer Navigation</h2>
+            <div class="col-span-full m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="logo" id="footer-logo">
+                </a>
+                <p id="footer-text">From sketch to screen, I make it move.</p>
+            </div>
+            
+            <nav id="footer-nav" class="col-span-full m-col-start-8 m-col-end-13 l-col-start-7 l-col-end-13">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="work.html">WORK</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
