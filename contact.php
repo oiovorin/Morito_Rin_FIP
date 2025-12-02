@@ -46,18 +46,40 @@
         </div>
     </header>
 
-    <section id="contact" class="grid-con">
+     <section id="contact">
 
+        <div class="grid-con">
         <h2 class="hidden">Contact form</h2>
-        <h3 class="col-span-full">Contact</h3>
-        <div id="contactform-box" class="col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">
+        <h3 class="col-span-full">Let's work Together!</h3>
+        <p class="col-span-full" id="sub-title">Turning your ideas into reality</p>
+        </div>
+        <?php
+if(isset($_GET['msg'])) {
+    echo '
+    <div id="succsess-bg" class="full-width-grid-con">
+        <div id="success-box" class="grid-con">
+            <div id="success-icon" class="col-start-1 col-span-1 m-col-start-4 m-col-end-6 l-col-start-4 l-col-span-2">
+            <img src="images/sucsess.svg" alt="success icon">
+            </div>
+            <div id="success-text" class="col-start-2 col-end-5 m-col-start-6 m-col-end-10 l-col-start-6 l-col-end-10">
+                <p id="success-title">Message sent!</p>
+                <p id="success-detail">' . htmlspecialchars($_GET['msg']) . '</p>
+            </div>
+            <div id="success-close-btn" class="col-span-full">
+                <a href="index.php">Back to home</a>
+            </div>
+        </div>
+    </div>';
+}
+?>
             <?php
             if(isset($_GET['error'])) {
                 echo '
+                <div id="bg">
                 <div id="error-box">
                 <div> <img src="images/error.svg" alt="error icon">
                 </div>
-                <div>
+                <div id="error-text">
                 <p id="error-title">Error!</p>
                 <p id="error-detail">Please make sure to fill up all sections</p>
                 </div>
@@ -65,47 +87,42 @@
                 <div id="error-close-btn">
                 <a href="contact.php">x</a>
                 </div>
+                </div>
                 </div>';
 }
 
 ?>
-            <form method="post" action="includes/send.php">
+            <div id="contactform-box">
+            <form method="post" action="includes/send.php" class="grid-con">
 
-                <h4 class="hidden">First name input</h4>
-                <label for="fname" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">First name</label>
-                <input type="text" id="fname" name="fname">
-
-                <h4 class="hidden">Last name input</h4>
-                <label for="lname" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">Last name</label>
-                <input type="text" id="lname" name="lname">
-
-                <h4 class="hidden">Phone number input</h4>
-                <label for="phone" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">Phone number</label>
-                <input type="text" id="phone" name="phone">
+                <div class="col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-7">
+                    <h4 class="hidden">Name input</h4>
+                    <label for="name" class="input-title">Name</label>
+                    <input type="text" id="name" name="name" class="input-box" placeholder="First Name & Last">
 
                 <h4 class="hidden">Email input</h4>
-                <label for="email" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">Email</label>
-                <input type="text" id="email" name="email">
-
+                <label for="email" class="input-title">Email</label>
+                <input type="text" id="email" name="email" class="input-box" placeholder="Enter Email">
                 <h4 class="hidden">Offer option checkbox</h4>
-                <div id="offer-option">
-                <p class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-4 l-col-end-10">What I offer</p>
-                <input type="checkbox" id="offer1" name="offer1" value="Branding">
-                <label for="offer1" class="option">Branding</label><br>
-                <input type="checkbox" id="offer2" name="offer2" value="Web Design">
-                <label for="offer2" class="option">Web Design</label><br>
-                <input type="checkbox" id="offer3" name="offer3" value="Web Development">
-                <label for="offer3" class="option">Web Development</label><br>
-                <input type="checkbox" id="offer4" name="others" value="others">
-                <label for="offer4" class="option last-option">Others</label><br>
+                    <label for="service" class="input-title">What I offer</label>
+                    <select id="service" name="service" class="input-box" aria-placeholder="Please select">
+                        <option value="">Please select</option>
+                        <option value="branding">Branding</option>
+                        <option value="web-design">Web Design</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="others">Others</option>
+                    </select>
                 </div>
 
 
+                <div class="col-span-full m-col-start-3 m-col-end-11 l-col-start-7 l-col-end-12">
                 <h4 class="hidden">Message input</h4>
-                <label for="message" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-4 l-col-end-10">Message</label>
-                <textarea id="message" name="message" rows="12" cols="50"></textarea>
+                <label for="message" class="input-title">Project Details</label>
+                <textarea id="message" name="message" rows="12" cols="50"
+                    placeholder="Tell me more about the project(Vision, Scope/Program & Schdule)"></textarea>
+                </div>
 
-                <input type="submit" value="Submit" id="submit-btn">
+                <input type="submit" value="Submit" id="submit-btn" class="col-span-full m-col-start-5 m-col-end-9">
 </form>
         </div>
     </section>
