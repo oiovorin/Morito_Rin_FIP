@@ -1,0 +1,95 @@
+#error-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(221, 37, 37);
+    color: #fff;
+    margin: 50px auto;
+    border-radius: 20px;
+    width: 400px;
+    text-transform: lowercase;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+
+
+    img {
+        height: 40px;
+        width: auto;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+
+
+#error-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+#error-title::first-letter {
+    text-transform: uppercase;
+}
+
+#error-detail {
+    margin-bottom: 30px;
+}
+
+#error-detail::first-letter {
+    text-transform: uppercase;
+}
+}
+
+#error-close-btn {
+    align-self: flex-start;
+    margin-top: 5px;
+
+    a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #error-box {
+        width: 500px;
+        gap: 30px;
+
+        img {
+            margin-left: 30px;
+            height: 50px;
+        }
+
+        #error-title {
+            font-size: 22px;
+        }
+
+        #error-detail {
+            font-size: 18px;
+        }
+    }
+    
+}
+
+@media screen and (min-width:1200px) {
+    #error-box {
+        width: 600px;
+        gap: 40px;
+
+        img {
+            margin-left: 45px;
+            height: 60px;
+        }
+
+        #error-title {
+            font-size: 24px;
+        }
+
+    }
+    
+}
