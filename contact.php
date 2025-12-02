@@ -51,12 +51,25 @@
         <h2 class="hidden">Contact form</h2>
         <h3 class="col-span-full">Contact</h3>
         <div id="contactform-box" class="col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">
-            <?phpif(isset($_GET['msg'])) {
-    echo htmlspecialchars($_GET['msg'], ENT_QUOTES, 'UTF-8');
+            <?php
+            if(isset($_GET['error'])) {
+                echo '
+                <div id="error-box">
+                <div> <img src="images/error.svg" alt="error icon">
+                </div>
+                <div>
+                <p id="error-title">Error!</p>
+                <p id="error-detail">Please make sure to fill up all sections</p>
+                </div>
+    
+                <div id="error-close-btn">
+                <a href="contact.php">x</a>
+                </div>
+                </div>';
 }
 
 ?>
-            <form action="/action_page.php">
+            <form method="post" action="includes/send.php">
 
                 <h4 class="hidden">First name input</h4>
                 <label for="fname" class="input-title col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-6">First name</label>
