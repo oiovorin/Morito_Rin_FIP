@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+    <?php
+    // browser rpoerting, turn off when we lalunch
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+
+    ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,20 +46,59 @@
         </div>
     </header>
 
-    <section id="contact">
+     <section id="contact">
 
         <div class="grid-con">
         <h2 class="hidden">Contact form</h2>
         <h3 class="col-span-full">Let's work Together!</h3>
         <p class="col-span-full" id="sub-title">Turning your ideas into reality</p>
         </div>
-        <div id="contactform-box">
-            <form action="/action_page.php" class="grid-con">
+        <?php
+if(isset($_GET['msg'])) {
+    echo '
+    <div id="succsess-bg" class="full-width-grid-con">
+        <div id="success-box" class="grid-con">
+            <div id="success-icon" class="col-start-1 col-span-1 m-col-start-4 m-col-end-6 l-col-start-4 l-col-span-2">
+            <img src="images/sucsess.svg" alt="success icon">
+            </div>
+            <div id="success-text" class="col-start-2 col-end-5 m-col-start-6 m-col-end-10 l-col-start-6 l-col-end-10">
+                <p id="success-title">Message sent!</p>
+                <p id="success-detail">' . nl2br(htmlspecialchars($_GET['msg']) ). '</p>
+            </div>
+            <div id="success-close-btn" class="col-span-full">
+                <a href="index.php">Back to home</a>
+            </div>
+        </div>
+    </div>';
+}
+?>
+            <?php
+            if(isset($_GET['error'])) {
+                echo '
+                <div id="bg">
+                <div id="error-box">
+                <div> <img src="images/error.svg" alt="error icon">
+                </div>
+                <div id="error-text">
+                <p id="error-title">Error!</p>
+                <p id="error-detail">Please make sure to fill up all sections</p>
+                </div>
+    
+                <div id="error-close-btn">
+                <a href="contact.php">x</a>
+                </div>
+                </div>
+                </div>';
+}
+
+?>
+            <div id="contactform-box">
+            <form method="post" action="includes/send.php" class="grid-con">
 
                 <div class="col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-7">
                     <h4 class="hidden">Name input</h4>
-                    <label for="fname" class="input-title">Name</label>
-                    <input type="text" id="fname" name="fname" class="input-box" placeholder="First Name & Last">
+                    <label for="name" class="input-title">Name</label>
+                    <input type="text" id="name" name="name" class="input-box" placeholder="First Name & Last">
 
                 <h4 class="hidden">Email input</h4>
                 <label for="email" class="input-title">Email</label>
