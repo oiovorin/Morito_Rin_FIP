@@ -65,11 +65,8 @@
         $sent = mail($recipient, $subject, $emailBody, $headers);
 
         if ($sent) {
-             $thankyou = urlencode(
-            "Thank you for contacting me, " .
-            htmlspecialchars($visitor_name, ENT_QUOTES, 'UTF-8') .
-            ". \r\nYou'll get a reply within 24 hours."
-        );
+            $nmessage = "\r\nYou'll get a reply within 24 hours.";
+            $thankyou = urlencode("Thank you for contacting me, " .htmlspecialchars($visitor_name, ENT_QUOTES, 'UTF-8') . $nmessage);
             header("Location: ../contact.php?msg=$thankyou");
             exit();
         } else {

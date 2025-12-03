@@ -63,7 +63,7 @@ if(isset($_GET['msg'])) {
             </div>
             <div id="success-text" class="col-start-2 col-end-5 m-col-start-6 m-col-end-10 l-col-start-6 l-col-end-10">
                 <p id="success-title">Message sent!</p>
-                <p id="success-detail">' . htmlspecialchars($_GET['msg']) . '</p>
+                <p id="success-detail">' . nl2br(htmlspecialchars($_GET['msg']) ). '</p>
             </div>
             <div id="success-close-btn" class="col-span-full">
                 <a href="index.php">Back to home</a>
