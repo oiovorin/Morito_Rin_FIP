@@ -1,16 +1,5 @@
 @use '../abstracts'; 
 
-#bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(46, 46, 46, 0.4);
-    backdrop-filter: blur(2px);
-    z-index: 999;
-}
-
 #error-box {
     display: flex;
     justify-content: flex-start;
@@ -18,14 +7,10 @@
     gap: 20px;
     background-color: rgb(221, 37, 37);
     color: #fff;
-    margin: 50px auto;
+    margin: 20px auto;
     border-radius: 20px;
     width: 400px;
     text-transform: lowercase;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -30%);
 
 
     img {

@@ -75,21 +75,17 @@ if(isset($_GET['msg'])) {
             <?php
             if(isset($_GET['error'])) {
                 echo '
-                <div id="bg">
                 <div id="error-box">
                 <div> <img src="images/error.svg" alt="error icon">
                 </div>
                 <div id="error-text">
                 <p id="error-title">Error!</p>
-                <p id="error-detail">Please make sure to fill up all sections</p>
-                </div>
-    
-                <div id="error-close-btn">
-                <a href="contact.php">x</a>
-                </div>
+                <p id="error-detail">' . htmlspecialchars($_GET['error'] ?? '') . '</p>
                 </div>
                 </div>';
 }
+
+
 
 ?>
             <div id="contactform-box">
@@ -98,19 +94,41 @@ if(isset($_GET['msg'])) {
                 <div class="col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-7">
                     <h4 class="hidden">Name input</h4>
                     <label for="name" class="input-title">Name</label>
-                    <input type="text" id="name" name="name" class="input-box" placeholder="First Name & Last">
+                    <?php
+                    if (isset($_GET['name'])) {
+                        $name_value = htmlspecialchars($_GET['name'], ENT_QUOTES, 'UTF-8');
+                    } else {
+                        $name_value = '';
+                    }
+                    ?>
+                    <input type="text" id="name" name="name" class="input-box" placeholder="First Name & Last" value="<?php echo $name_value; ?>">
 
                 <h4 class="hidden">Email input</h4>
                 <label for="email" class="input-title">Email</label>
-                <input type="text" id="email" name="email" class="input-box" placeholder="Enter Email">
+                <?php
+                    if (isset($_GET['name'])) {
+                        $email_value = htmlspecialchars($_GET['email'], ENT_QUOTES, 'UTF-8');
+                    } else {
+                        $email_value = '';
+                    }
+                    ?>
+                <input type="text" id="email" name="email" class="input-box" placeholder="Enter Email" value="<?php echo $email_value; ?>">
+
                 <h4 class="hidden">Offer option checkbox</h4>
                     <label for="service" class="input-title">What I offer</label>
-                    <select id="service" name="service" class="input-box" aria-placeholder="Please select">
+                    <?php
+                    if (isset($_GET['service'])) {
+                        $service_value = htmlspecialchars($_GET['service'], ENT_QUOTES, 'UTF-8');
+                    } else {
+                        $service_value = '';
+                    }
+                    ?>
+                    <select id="service" name="service" class="input-box" aria-placeholder="Please select" value="<?php echo $service_value; ?>">
                         <option value="">Please select</option>
-                        <option value="branding">Branding</option>
-                        <option value="web-design">Web Design</option>
-                        <option value="web-development">Web Development</option>
-                        <option value="others">Others</option>
+                        <option <?php if ($service_value == 'Branding') echo 'selected'; ?>>Branding</option>
+                        <option <?php if ($service_value == 'Web Design') echo 'selected'; ?>>Web Design</option>
+                        <option <?php if ($service_value == 'Web Development') echo 'selected'; ?>>Web Development</option>
+                        <option <?php if ($service_value == 'Others') echo 'selected'; ?>>Others</option>
                     </select>
                 </div>
 
@@ -118,8 +136,15 @@ if(isset($_GET['msg'])) {
                 <div class="col-span-full m-col-start-3 m-col-end-11 l-col-start-7 l-col-end-12">
                 <h4 class="hidden">Message input</h4>
                 <label for="message" class="input-title">Project Details</label>
+                <?php
+                    if (isset($_GET['message'])) {
+                        $message_value = htmlspecialchars($_GET['message'], ENT_QUOTES, 'UTF-8');
+                    } else {
+                        $message_value = '';
+                    }
+                    ?>
                 <textarea id="message" name="message" rows="12" cols="50"
-                    placeholder="Tell me more about the project(Vision, Scope/Program & Schdule)"></textarea>
+                    placeholder="Tell me more about the project(Vision, Scope/Program & Schdule)" value="<?php echo $message_value; ?>"></textarea>
                 </div>
 
                 <input type="submit" value="Submit" id="submit-btn" class="col-span-full m-col-start-5 m-col-end-9">
