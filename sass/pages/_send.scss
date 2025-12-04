@@ -1,0 +1,174 @@
+@use '../abstracts'; 
+
+#error-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(221, 37, 37);
+    color: #fff;
+    margin: 20px auto;
+    border-radius: 20px;
+    width: 400px;
+    text-transform: lowercase;
+
+
+    img {
+        height: 40px;
+        width: auto;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+
+#error-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+#error-title::first-letter {
+    text-transform: uppercase;
+}
+
+#error-detail {
+    margin-bottom: 30px;
+}
+
+#error-detail::first-letter {
+    text-transform: uppercase;
+}
+}
+
+#error-close-btn {
+    align-self: flex-start;
+    margin-top: 5px;
+
+    a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    }
+}
+
+#succsess-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: abstracts.$beige;
+    backdrop-filter: blur(2px);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#success-box {
+
+    #success-icon {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    img {
+        height: 50px;
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+
+    #success-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    #success-close-btn {
+        text-align: center;
+        margin-top: 50px;
+
+        a {
+            color: #fff;
+            background-color: abstracts.$rich-black;
+            padding: 20px 40px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    #error-box {
+        width: 500px;
+        gap: 30px;
+
+        img {
+            margin-left: 30px;
+            height: 50px;
+        }
+
+        #error-text {
+            padding-right: 20px;
+        }
+
+        #error-title {
+            font-size: 22px;
+        }
+
+        #error-detail {
+            font-size: 18px;
+        }
+    }
+
+    #success-box {
+        img {
+            height: 60px;
+        }
+
+        #success-title {
+            font-size: 22px;
+        }
+
+        #success-detail
+         {
+            font-size: 18px;
+         }
+    }
+    
+}
+
+@media screen and (min-width:1200px) {
+    #error-box {
+        width: 600px;
+        gap: 40px;
+
+        img {
+            margin-left: 45px;
+            height: 60px;
+        }
+
+        #error-text {
+            padding-right: 65px;
+        }
+
+        #error-title {
+            font-size: 24px;
+        }
+
+    }
+
+    #success-box {
+        img {
+            height: 70px;
+        }
+
+        #success-title {
+            font-size: 24px;
+        }
+
+    }
+    
+}

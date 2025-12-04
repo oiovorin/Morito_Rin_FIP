@@ -66,6 +66,17 @@ header {
     }
 }
 
+.dark-header #header-nav {
+    background-color: abstracts.$beige;
+}
+
+.dark-header #header-nav nav ul li a {
+    color: abstracts.$rich-black;
+}
+
+.dark-header #header-nav-close {
+    color: abstracts.$rich-black;
+}
 @media screen and (min-width: 768px) {
     header {
         #menu-show, #header-nav-close {
@@ -119,7 +130,30 @@ header {
             }
         }
     }
+.dark-header #header-nav nav ul li a {
+    color: #fff;
+
+
+    &:hover {
+        border-bottom: 4px solid #fff;
+    }
+}
+
+.dark-header #header-nav {
+    background-color: transparent;
+}
+
+.dark-header #header-nav nav ul li:last-child a {
+            color: abstracts.$rich-black;
+            background-color: abstracts.$beige;
+            padding: 8px 25px;
+            border-radius: 25px;
+            &:hover {
+                background-color: abstracts.$coral;
+                transition: all 0.3s ease-in-out;
+            }
     
+}
 }
 
 @media screen and (min-width: 1200px) {
