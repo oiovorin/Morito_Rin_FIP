@@ -10,10 +10,11 @@ navLinks.forEach(link => {
 })
 
 // work gallery slide
-const container = document.querySelector('#work-gallery-con');
-const workCards = document.querySelectorAll('.work-card');
-const preBtn = document.querySelector('#previous');
-const nextBtn = document.querySelector('#next');
+carousel = function(id) {
+const container = document.querySelector(id + '.work-gallery-con');
+  const workCards = container.querySelectorAll('.work-card');
+  const preBtn = container.querySelector('.previous');
+  const nextBtn = container.querySelector('.next');
 
 let currentIndex = 0;
 
@@ -23,6 +24,7 @@ function updateCard () {
     });
     
     workCards[currentIndex].style.display = "block";
+    console.log("called");
 }
 
 function nextCard () {
@@ -51,6 +53,13 @@ nextBtn.addEventListener("click", nextCard);
 preBtn.addEventListener("click", preCard);
 
 updateCard();
+}
+
+carousel('#elin');
+carousel('#loop');
+carousel('#zima');
+carousel('#kids');
+
 
 
 // video

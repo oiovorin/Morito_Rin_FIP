@@ -37,13 +37,22 @@
             $fail[] = 'email';
         }
 
-        if ($message === '') {
+        if ($service === '') {
+            $fail[] = 'service option';
+        }
+
+      if ($message === '') {
             $fail[] = 'message';
         }
 
         if (!empty($fail)) {
-            $error = urlencode(implode(', ', $fail));
-            header("Location: ../contact.php?error=$error");
+            $error_message = implode(', ', $fail);
+            $error = urlencode("Please fix: " . $error_message);
+            $name_fill = urlencode($name);
+            $email_fill = urlencode($visitor_email);
+            $service_fill = urlencode($service);
+            $message_fill = urlencode($message);
+            header("Location: ../contact.php?error=$error&name=$name_fill&email=$email_fill&service=$service_fill&message=$message_fill");
             exit();
         }
 
