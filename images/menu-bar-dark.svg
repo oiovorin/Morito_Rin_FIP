@@ -3,22 +3,22 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #292624;
-      }
-
-      .cls-2 {
         fill: none;
-        stroke: #fff;
+        stroke: #292624;
         stroke-linecap: round;
         stroke-miterlimit: 10;
         stroke-width: 6px;
       }
+
+      .cls-2 {
+        fill: #fef7e7;
+      }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1">
-    <circle class="cls-1" cx="49.69" cy="49.69" r="49.69"/>
-    <line class="cls-2" x1="26.39" y1="33.74" x2="72.99" y2="33.74"/>
-    <line class="cls-2" x1="26.39" y1="49.69" x2="72.99" y2="49.69"/>
-    <line class="cls-2" x1="26.39" y1="65.64" x2="72.99" y2="65.64"/>
+    <circle class="cls-2" cx="49.69" cy="49.69" r="49.69"/>
+    <line class="cls-1" x1="26.39" y1="33.74" x2="72.99" y2="33.74"/>
+    <line class="cls-1" x1="26.39" y1="49.69" x2="72.99" y2="49.69"/>
+    <line class="cls-1" x1="26.39" y1="65.64" x2="72.99" y2="65.64"/>
   </g>
 </svg>
