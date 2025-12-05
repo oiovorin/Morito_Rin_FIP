@@ -1,14 +1,18 @@
 @use '../abstracts'; 
 
 #about-me {
-    h3 {
+    h3#title {
         font-size: 50px;
         font-weight: 900;
         margin: 50px 0;
     }
 
+    h3.introduce {
+        font-size: 24px;
+    }
+
     #about-img {
-        height: 250px;
+        height: 300px;
         background-color: rgba(128, 128, 128, 0.379);
         border-radius: 5px;
         margin-bottom: 40px;
@@ -17,14 +21,23 @@
     p {
         margin-bottom: 50px;
     }
+
+    #bio {
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: rgb(47, 47, 47);
+        }
+    }
 }
 
 @media screen and (min-width:1200px) {
     #about-me {
-    h3 {
+    h3#title {
         font-size: 96px;
         font-weight: 900;
         margin: 80px 0;
+        color: rgb(45, 45, 45);
     }
     
     #about-img {
@@ -34,8 +47,13 @@
         margin-bottom: 60px;
     }
 
-    p {
-        margin-bottom: 80px;
+    h3.introduce {
+        margin: 30px 0 10px 0 ;
+        font-size: 35px;
+    }
+
+    article#bio p {
+        margin: 0;
     }
 }
 }

@@ -11,7 +11,9 @@
 </head>
 <body>
     <header>
+        <h1 class="hidden">Rin Morito Portofolio Home Page</h1>
         <div class="grid-con">
+            <h2 class="hidden">Header Navigation</h2>
             <a href="index.html" class="col-start-1 col-span-1 m-col-start-1 m-col-end-2">
                 <img src="images/logo.svg" alt="logo" id="header-logo">
             </a>
@@ -29,7 +31,7 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">HOME</a></li>
-                        <li><a href="work.html">WORKS</a></li>
+                        <li><a href="work.html">WORK</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="contact.html">CONTACT</a></li>
                     </ul>
@@ -37,6 +39,15 @@
             </div>
         </div>
     </header>
+
+    <section class="grid-con">
+      <h2 class="hidden">Rin Morito - designer & Developer</h2>
+      <div id="hero" class="col-span-full">
+      <h3>Rin Morito</h3>
+      <h4>Designer</h4>
+      <h4>Developer</h4>
+      </div>
+    </section>
 
     <section id="my-skills" class="full-width-grid-con">
   <div class="grid-con">
@@ -48,12 +59,12 @@
     <div id="skill-con" class="col-span-full m-col-start-2 m-col-end-12">
       <div class="skill">
         <div class="skill-title">
-            <h4>01</h4>
-            <h4>Branding</h4>
+            <p class="num_name">01</p>
+            <p class="num_name">Branding</p>
         </div>
         
         <div>        
-        <p>Logo Creation<br>
+        <p class="skill_list">Logo Creation<br>
           Visual Identity<br>
           Brand Guideline
         </p>
@@ -62,12 +73,12 @@
 
       <div class="skill">
         <div class="skill-title">
-            <h4>02</h4>
-            <h4>Motion</h4>
+            <p class="num_name">02</p>
+            <p class="num_name">Motion</p>
         </div>
         
         <div>        
-        <p>Modeliing<br>
+        <p class="skill_list">Modeliing<br>
           Brand Mockup<br>
           Poster Production
         </p>
@@ -76,12 +87,12 @@
 
       <div class="skill">
         <div class="skill-title">
-            <h4>03</h4>
-            <h4>Developing</h4>
+            <p class="num_name">03</p>
+            <p class="num_name">Developing</p>
         </div>
         
         <div>        
-        <p>Responsive Web Design<br>
+        <p class="skill_list">Responsive Web Design<br>
           Front-End Development<br>
           Web Animation
         </p>
@@ -90,6 +101,7 @@
     </div>
 
     <section id="player-container" class="col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11">
+      <h2 class="hidden">Video Player</h2>
       <video controls preload="metadata" poster="images/placeholder.jpg">
         <source src="videos/intro.mp4" type="video/mp4">
         <source src="videos/intro.webm" type="video/webm">
@@ -119,34 +131,174 @@
     </section>
   </div>
 </section>
-
-
-    <section id="work-garllery" class="grid-con">
-        <h2 class="hidden">homepage work gallery</h2>
-        <h3 class="col-span-full">Work</h3>
-        <div id="work-gallery-con" class="col-span-full">
-            <div class="work-card" id="work1">
-                <img src="images/work1.jpeg" alt="project 1 image">
+        
+        <section id="work-show" class="grid-con">
+          <h2 class="hidden">homepage work gallery</h2>
+          <h3 id="section-title" class="col-span-full">Work</h3>
+        
+          <div class="col-span-full work-con">
+            <hr class="col-span-full">
+            <h3 class="work-title"><span>Elin</span> - Branding</h3>
+            <p class="work-summary">Developed a full brand identity for Elin, an imaginary skincare brand inspired by camellia flowers. The project included branding, graphic design, and video commercials showcasing Elin's gentle, natural, and modern approach.</p>
+        
+            
+            <div id="elin" class="col-span-full work-gallery-con">
+              <button class="arrow previous">&lt;</button>
+              <div class="work-card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/elin-brand-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/elin-brand-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/elin-brand-600.jpg">
+                  <img src="images/elin-brand-600.jpg" alt="elin branding image">
+                </picture>
+              </div>
+              <div class="work-card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/elin-logo-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/elin-logo-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/elin-logo-600.jpg">
+                  <img src="images/elin-logo-600.jpg" alt="elin logo">
+                </picture>
+              </div>
+              <div class="work-card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/elin-cinema-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/elin-cinema-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/elin-cinema-600.jpg">
+                  <img src="images/elin-cinema-600.jpg" alt="elin cinemagraph image">
+                </picture>
+              </div>
+              <button class="arrow next">&gt;</button>
             </div>
-            <div class="work-card" id="work2">
-                <img src="images/work1.jpeg" alt="project 2 image">
-            </div>
-            <div class="work-card" id="work3">
-                <img src="images/work1.jpeg" alt="project 3 image">
-            </div>
-        </div>
+          </div>
 
-        <div id="arrow" class="col-span-full">
-          <button id="previous">&larr;</button>
-          <button id="next">&#8594;</button>
-        </div>
+            <hr class="col-span-full">
+
+            <div class="col-span-full work-con">
+            <hr class="col-span-full">
+            <h3 class="work-title"><span>Earbuds</span> - 3D & Web Design</h3>
+            <p class="work-summary">Developed a concept wireless earbuds for Loop, an existing brand. The project included 3D modeling, 3D animation, and web development, showcasing a sleek, modern, and user-friendly design.</p>
+        
+            
+            <div id="loop" class="col-span-full work-gallery-con">
+              <button class="arrow previous">&lt;</button>
+              <div class="work-card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/earbuds-web-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/earbuds-web-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/earbuds-web-600.jpg">
+                  <img src="images/earbuds-web-600.jpg" alt="earbuds website image">
+                </picture>
+              </div>
+              <div class="work-card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/earbuds-poster-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/earbuds-poster-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/earbuds-poster-600.jpg">
+                  <img src="images/earbuds-poster-600.jpg" alt="earbuds poster">
+                </picture>
+              </div>
+              <div class="work-card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/earbuds-xray-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/earbuds-xray-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/earbuds-xray-600.jpg">
+                  <img src="images/earbuds-xray-600.jpg" alt="earbuds x-ray image">
+                </picture>
+              </div>
+              <button class="arrow next">&gt;</button>
+            </div>
+            </div>
+
+            <hr class="col-span-full">
+
+            <div class="col-span-full work-con">
+            <hr class="col-span-full">
+            <h3 class="work-title"><span>Zima</span> - Reimagined, 3D & Web</h3>
+            <p class="work-summary">Reimagined Zima, a classic lemon-lime beverage brand, with branding, packaging, 3D modeling, web design, and advertising. The project modernizes the brand while keeping its unique personality.</p>
+        
+            
+            <div id="zima" class="col-span-full work-gallery-con">
+              <button class="arrow previous">&lt;</button>
+              <div class="work-card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/zima-original-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/zima-original-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/zima-original-600.jpg">
+                  <img src="images/zima-original-600.jpg" alt="zima original ad">
+                </picture>
+              </div>
+              <div class="work-card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/zima-all-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/zima-all-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/zima-all-600.jpg">
+                  <img src="images/zima-all-600.jpg" alt="zima all flavor poster">
+                </picture>
+              </div>
+              <div class="work-card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/zima-3d-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/zima-3d-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/zima-3d-600.jpg">
+                  <img src="images/zima-3d-600.jpg" alt="zima logo 3d image">
+                </picture>
+              </div>
+              <button class="arrow next">&gt;</button>
+            </div>
+          </div>
+
+          <hr class="col-span-full">
+
+           <div class="col-span-full work-con">
+            <hr class="col-span-full">
+            <h3 class="work-title"><span>Kids TV Channel Bumper</span> - 3D Animation </h3>
+            <p class="work-summary">Created a TV bumper for a kids channel with full 3D animation in Cinema 4D, delivering a playful and engaging visual style that reflects the channel’s fun and energetic identity.</p>
+        
+            
+            <div id="kids" class="col-span-full work-gallery-con">
+              <button class="arrow previous">&lt;</button>
+              <div class="work-card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/kids-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/kids-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/kids-600.jpg">
+                  <img src="images/kids-600.jpg" alt="kids bumper city">
+                </picture>
+              </div>
+              <div class="work-card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/kids-ballon-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/kids-ballon-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/kids-ballon-600.jpg">
+                  <img src="images/kids-ballon-600.jpg" alt="kids bumper ballon">
+                </picture>
+              </div>
+              <div class="work-card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/kids-cn-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/kids-cn-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/kids-cn-600.jpg">
+                  <img src="images/kids-cn-600.jpg" alt="kids bumper Cartoon Network logo">
+                </picture>
+              </div>
+              <button class="arrow next">&gt;</button>
+            </div>
+          </div>
+
+          
+
+            
+
+            
+      
     </section>
 
     <section id="about" class="grid-con">
-        <h2 class="hidden">about card</h2>
+        <h2 class="hidden">To about page navigation card</h2>
         <a href="about.html" class="col-span-full m-col-start-2 l-col-end-12 l-col-start-2 m-col-end-12">
         <div id="about-card">
-            <img src="images/about.jpeg" alt="image for about card">
+            <img src="images/about.jpeg" alt="image for about card(myself)">
             <h3>About</h3>
             <p>Graphic and Motion Designer, Front-End Developer.</p>
         </div>
@@ -155,6 +307,7 @@
 
     <footer>
         <div class="grid-con">
+            <h2 class="hidden">Footer Navigation</h2>
             <div class="col-span-full m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">
                 <a href="index.html">
                     <img src="images/logo.svg" alt="logo" id="footer-logo">

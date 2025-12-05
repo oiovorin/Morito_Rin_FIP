@@ -9,14 +9,7 @@
         margin-bottom: 50px;
     }
 
-    .landscape {
-        width: 290px;
-        height: 175px;
-        background-color: rgba(128, 128, 128, 0.379);
-        border-radius: 5px;
-    }
-
-    .portolate-right {
+    .right {
         width: 290px;
         height: 355px;
         background-color: rgba(128, 128, 128, 0.379);
@@ -24,15 +17,16 @@
         margin-left: 170px;
     }
 
-    p {
+    h4 {
         margin-bottom: 50px;
+        font-size: 18px;
     }
 
-    p.margin {
+    h4.margin {
         margin-left: 45px;
     }
 
-    .portolate-left {
+    .left {
         width: 290px;
         height: 355px;
         background-color: rgba(128, 128, 128, 0.379);
@@ -50,32 +44,26 @@
         margin-bottom: 80px;
     }
 
-    .landscape {
-        width: 355px;
-        height: 215px;
-        background-color: rgba(128, 128, 128, 0.379);
-        border-radius: 5px;
-    }
-
-    .portolate-right {
-        width: 310px;
-        height: 382px;
+    .right {
+        width: 450px;
+        height: 380px;
         background-color: rgba(128, 128, 128, 0.379);
         border-radius: 5px;
         margin-left: 60px;
     }
 
-    p {
+    h4 {
+        font-size: 20px;
         margin-bottom: 50px;
     }
 
-    p.margin {
+    h4.margin {
         margin-left: 55px;
     }
 
-    .portolate-left {
-        width: 310px;
-        height: 382px;
+    .left {
+        width: 450px;
+        height: 380px;
         background-color: rgba(128, 128, 128, 0.379);
         border-radius: 5px;
     }
@@ -86,32 +74,25 @@
 @media screen and (min-width: 1200px) {
     #work-showcase {
 
-    .landscape {
-        width: 575px;
-        height: 345px;
+    .right {
+        width: 650px;
+        height: 430px;
         background-color: rgba(128, 128, 128, 0.379);
         border-radius: 5px;
     }
 
-    .portolate-right {
-        width: 490px;
-        height: 605px;
-        background-color: rgba(128, 128, 128, 0.379);
-        border-radius: 5px;
-        margin-left: 60px;
-    }
-
-    p {
+    h4 {
         margin-bottom: 50px;
+        font-size: 24px;
     }
 
-    p.margin {
+    h4.margin {
         margin-left: 55px;
     }
 
-    .portolate-left {
-        width: 490px;
-        height: 605px;
+    .left {
+        width: 650px;
+        height: 430px;
         background-color: rgba(128, 128, 128, 0.379);
         border-radius: 5px;
     }
