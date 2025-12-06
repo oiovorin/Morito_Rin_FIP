@@ -16,18 +16,19 @@
     <title>Morito Rin Portfolio Contact</title>
 </head>
 <body>
+    <a href="#main" class="skip">Skip to main content</a>
     <header>
         <h1 class="hidden">Rin Morito Portofolio Contact Page</h1>
         <div class="grid-con">
             <h2 class="hidden">Header Navigation</h2>
-            <a href="index.html" class="col-start-1 col-span-1 m-col-start-1 m-col-end-2">
+            <a href="index.html" class="col-start-1 col-span-1 m-col-start-1 m-col-end-2" aria-label="home">
                 <img src="images/logo.svg" alt="logo" id="header-logo">
             </a>
 
 
             <input type="checkbox" id="hamburger">
             <div id="mob-menu" class="col-start-4 col-end-5 m-col-auto">
-            <label for="hamburger" id="menu-show">
+            <label for="hamburger" id="menu-show" aria-label="menu">
                 <img src="images/menu-bar.svg" alt="hamburger menu bar" class="hamburger-menu-bar">
             </label>
             </div>
@@ -46,6 +47,7 @@
         </div>
     </header>
 
+    <main id="main">
      <section id="contact">
 
         <div class="grid-con">
@@ -151,6 +153,7 @@ if(isset($_GET['msg'])) {
 </form>
         </div>
     </section>
+                </main>
 
     <footer>
         <div class="grid-con">
