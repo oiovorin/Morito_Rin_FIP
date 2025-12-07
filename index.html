@@ -32,7 +32,7 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">HOME</a></li>
-                        <li><a href="work.html">WORK</a></li>
+                        <li><a href="#work-show">WORK</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="contact.html">CONTACT</a></li>
                     </ul>
@@ -138,11 +138,8 @@
           <h2 class="hidden">homepage work gallery</h2>
           <h3 id="section-title" class="col-span-full">Work</h3>
         
-          <div class="col-span-full work-con">
+          <div class="work-con col-span-full">
             <hr class="col-span-full">
-            <h3 class="work-title"><span>Elin</span> - Branding</h3>
-            <p class="work-summary">Developed a full brand identity for Elin, an imaginary skincare brand inspired by camellia flowers. The project included branding, graphic design, and video commercials showcasing Elin's gentle, natural, and modern approach.</p>
-        
             
             <div id="elin" class="col-span-full work-gallery-con">
               <button class="arrow previous">&lt;</button>
@@ -172,15 +169,16 @@
               </div>
               <button class="arrow next">&gt;</button>
             </div>
+            <a href="elin.html" class="col-span-full">
+            <h3 class="work-title">Elin</h3>
+            <p class="category">Branding</p>
+            </a>
           </div>
 
             <hr class="col-span-full">
 
             <div class="col-span-full work-con">
             <hr class="col-span-full">
-            <h3 class="work-title"><span>Earbuds</span> - 3D & Web Design</h3>
-            <p class="work-summary">Developed a concept wireless earbuds for Loop, an existing brand. The project included 3D modeling, 3D animation, and web development, showcasing a sleek, modern, and user-friendly design.</p>
-        
             
             <div id="loop" class="col-span-full work-gallery-con">
               <button class="arrow previous">&lt;</button>
@@ -210,15 +208,16 @@
               </div>
               <button class="arrow next">&gt;</button>
             </div>
+            <a href="earbuds.html">
+            <h3 class="work-title">Loop Earbuds</h3>
+            <p class="category">3D & Web Design</p>
+            </a>
             </div>
 
             <hr class="col-span-full">
 
             <div class="col-span-full work-con">
             <hr class="col-span-full">
-            <h3 class="work-title"><span>Zima</span> - Reimagined, 3D & Web</h3>
-            <p class="work-summary">Reimagined Zima, a classic lemon-lime beverage brand, with branding, packaging, 3D modeling, web design, and advertising. The project modernizes the brand while keeping its unique personality.</p>
-        
             
             <div id="zima" class="col-span-full work-gallery-con">
               <button class="arrow previous">&lt;</button>
@@ -248,15 +247,16 @@
               </div>
               <button class="arrow next">&gt;</button>
             </div>
+            <a href="zima.html">
+            <h3 class="work-title">Zima</h3>
+            <p class="category">Reimagined, 3D & Web</p>
+            </a>
           </div>
 
           <hr class="col-span-full">
 
-           <div class="col-span-full work-con">
+          <div class="col-span-full work-con">
             <hr class="col-span-full">
-            <h3 class="work-title"><span>Kids TV Channel Bumper</span> - 3D Animation </h3>
-            <p class="work-summary">Created a TV bumper for a kids channel with full 3D animation in Cinema 4D, delivering a playful and engaging visual style that reflects the channel’s fun and energetic identity.</p>
-        
             
             <div id="kids" class="col-span-full work-gallery-con">
               <button class="arrow previous">&lt;</button>
@@ -286,25 +286,30 @@
               </div>
               <button class="arrow next">&gt;</button>
             </div>
+            <a href="kids.html">
+            <h3 class="work-title">Kids TV Channel Bumper</h3>
+            <p class="category">3D Animation</p>
+            </a>
+            
+            <hr id="work-last" class="col-span-full">
           </div>
 
-          
 
-            
-
-            
       
     </section>
 
-    <section id="about" class="grid-con">
+    <section id="about-card" class="full-width-grid-con">
+      <div class="grid-con">
         <h2 class="hidden">To about page navigation card</h2>
-        <a href="about.html" class="col-span-full m-col-start-2 l-col-end-12 l-col-start-2 m-col-end-12">
-        <div id="about-card">
-            <img src="images/about.jpeg" alt="image for about card(myself)">
-            <h3>About</h3>
-            <p>Graphic and Motion Designer, Front-End Developer.</p>
+        <div class="col-span-full m-col-start-2 m-col-end-7">
+        <h3>So... who am I?</h3>
+        <p>Hi there, and thanks for exploring my work.<br>
+           I'm Designer / Developer who turns ideas into reality. <br>Curious about the person behind the projects?</p>
+
+        <a href="about.html">More about me &rarr;</a>
         </div>
-        </a>
+          <img src="images/rin-600.jpg" alt="rin image" class="col-start-2 col-end-5 m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12">
+          </div>
     </section>
 
     </main>
@@ -312,22 +317,41 @@
     <footer>
         <div class="grid-con">
             <h2 class="hidden">Footer Navigation</h2>
-            <div class="col-span-full m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">
-                <a href="index.html">
-                    <img src="images/logo.svg" alt="logo" id="footer-logo">
-                </a>
-                <p id="footer-text">From sketch to screen, I make it move.</p>
+            <div id="footer-message" class="col-span-full">
+              <p>Any project in your mind?</p>
+              <a href="contact.html">
+                Let's work together!
+              </a>
             </div>
+
+            <hr id="footer-hr" class="col-span-full">
             
-            <nav id="footer-nav" class="col-span-full m-col-start-8 m-col-end-13 l-col-start-7 l-col-end-13">
+            <nav id="footer-nav" class="col-span-full">
+              <h3 class="visually-hidden">Fotter Links</h3>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="work.html">WORKS</a></li>
-                    <li><a href="about">ABOUT</a></li>
-                    <li><a href="contact">CONTACT</a></li>
+                    <li><a href="#work-show">WORKS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
+        <div id="contact-info" class="full-width-grid-con">
+          <div class="grid-con">
+              <p id="copyrights" class="col-span-full">&copy;2026 Rin Morito</p>
+              <div id="icons" class="col-span-full">
+                <a href="www.linkedin.com/in/rin-morito-7b9868329" aria-label="LinkedIn">
+                  <img src="images/linkedin.svg" alt="LinkedIn icon" class="social-icon">
+                </a>
+                <a href="https://github.com/oiovorin" aria-label="GitHub">
+                  <img src="images/github.svg" aria-label="GitHub icon" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/r___nn3/" aria-label="instagram">
+                  <img src="images/instagram.svg" alt="instagram icon" class="social-icon">
+                </a>
+              </div>
+            </div>
+            </div>
     </footer>
     <script src="js/main.js"></script>
 </body>

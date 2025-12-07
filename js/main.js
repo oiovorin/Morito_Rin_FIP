@@ -9,59 +9,6 @@ navLinks.forEach(link => {
   });
 })
 
-// work gallery slide
-carousel = function(id) {
-const container = document.querySelector(id + '.work-gallery-con');
-  const workCards = container.querySelectorAll('.work-card');
-  const preBtn = container.querySelector('.previous');
-  const nextBtn = container.querySelector('.next');
-
-let currentIndex = 0;
-
-function updateCard () {
-    workCards.forEach ((card) => {
-         card.style.display = "none";
-    });
-    
-    workCards[currentIndex].style.display = "block";
-    console.log("called");
-}
-
-function nextCard () {
-    if(currentIndex === workCards.length - 1) {
-        currentIndex = 0;
-    }
-    else {
-        currentIndex++;
-    };
-
-    updateCard();
-}
-
-function preCard () {
-    if(currentIndex === 0) {
-        currentIndex = workCards.length - 1;
-    }
-    else {
-        currentIndex--;
-    };
-
-    updateCard();
-}
-
-nextBtn.addEventListener("click", nextCard);
-preBtn.addEventListener("click", preCard);
-
-updateCard();
-}
-
-carousel('#elin');
-carousel('#loop');
-carousel('#zima');
-carousel('#kids');
-
-
-
 // video
 const playerCon = document.querySelector("#player-container");
 const player = document.querySelector("video");
@@ -130,5 +77,58 @@ videoControls.addEventListener("mouseenter", showControls);
 videoControls.addEventListener("mouseleave", hideControls);
 player.addEventListener("mouseenter", showControls);
 player.addEventListener("mouseleave", hideControls);
+
+
+// work gallery slide
+carousel = function(id) {
+const container = document.querySelector(id + '.work-gallery-con');
+  const workCards = container.querySelectorAll('.work-card');
+  const preBtn = container.querySelector('.previous');
+  const nextBtn = container.querySelector('.next');
+
+let currentIndex = 0;
+
+function updateCard () {
+    workCards.forEach ((card) => {
+         card.style.display = "none";
+    });
+    
+    workCards[currentIndex].style.display = "block";
+    console.log("called");
+}
+
+function nextCard () {
+    if(currentIndex === workCards.length - 1) {
+        currentIndex = 0;
+    }
+    else {
+        currentIndex++;
+    };
+
+    updateCard();
+}
+
+function preCard () {
+    if(currentIndex === 0) {
+        currentIndex = workCards.length - 1;
+    }
+    else {
+        currentIndex--;
+    };
+
+    updateCard();
+}
+
+nextBtn.addEventListener("click", nextCard);
+preBtn.addEventListener("click", preCard);
+
+updateCard();
+}
+
+carousel('#elin');
+carousel('#loop');
+carousel('#zima');
+carousel('#kids');
+
 
 })();
