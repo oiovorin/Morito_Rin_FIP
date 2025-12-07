@@ -58,7 +58,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: abstracts.$beige;
+    background-color: abstracts.$rich-black;
     backdrop-filter: blur(2px);
     z-index: 999;
     display: flex;
@@ -91,10 +91,12 @@
 
         a {
             color: #fff;
-            background-color: abstracts.$rich-black;
+            background-color: abstracts.$coral;
             padding: 20px 40px;
             border-radius: 10px;
             text-decoration: none;
+            font-weight: 500;
+            font-size: 18px;
         }
     }
 }
