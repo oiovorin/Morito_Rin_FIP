@@ -17,6 +17,7 @@ const centerPlayButton = document.querySelector("#center-play-button");
 const playButton = document.querySelector("#play-button");
 const pauseButton = document.querySelector("#pause-button");
 const stopButton = document.querySelector("#stop-button");
+const timeline = document.querySelector("#timeline");
 const volumeSlider = document.querySelector("#change-vol");
 const fullScreen = document.querySelector("#full-screen");
 
@@ -47,6 +48,18 @@ function showCenterPlay () {
     centerPlayButton.style.display = "block";
 }
 
+function loadTimelineLength () {
+    timeline.max = player.duration;
+}
+
+function updateTimeline () {
+    timeline.value = player.currentTime;
+}
+
+function changeTimeline () {
+    player.currentTime = timeline.value;
+}
+
 function changeVolume () {
     player.volume = volumeSlider.value;
 }
@@ -73,6 +86,9 @@ player.addEventListener("ended", showCenterPlay)
 pauseButton.addEventListener("click", pauseVideo);
 stopButton.addEventListener("click", stopVideo);
 volumeSlider.addEventListener("change", changeVolume);
+player.addEventListener("loadedmetadata", loadTimelineLength);
+player.addEventListener("timeupdate", updateTimeline)
+timeline.addEventListener("change", changeTimeline)
 fullScreen.addEventListener("click", toggleFullScreen);
 videoControls.addEventListener("mouseenter", showControls);
 videoControls.addEventListener("mouseleave", hideControls);
