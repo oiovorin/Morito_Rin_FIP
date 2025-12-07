@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Morito Rin Portfolio Homepage</title>
+</head>
+<body>
+    <header>
+        <h1 class="hidden">Rin Morito Portofolio Home Page</h1>
+        <div class="grid-con">
+            <h2 class="hidden">Header Navigation</h2>
+            <a href="index.html" class="col-start-1 col-span-1 m-col-start-1 m-col-end-2" aria-label="home">
+                <img src="images/logo.svg" alt="logo" id="header-logo">
+            </a>
+
+
+            <input type="checkbox" id="hamburger">
+            <div id="mob-menu" class="col-start-4 col-end-5 m-col-auto">
+            <label for="hamburger" id="menu-show" aria-label="menu">
+                <img src="images/menu-bar.svg" alt="hamburger menu bar" class="hamburger-menu-bar">
+            </label>
+            </div>
+
+            <div id="header-nav" class="m-col-start-4 m-col-end-13 l-col-start-5 l-col-end-13">
+                <label for="hamburger" id="header-nav-close">X</label>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="index.html#work-show">WORK</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <seection class="grid-con">
+            <h2 class="hidden">Kids TV Channel Bumper</h2>
+            <div id="intro" class="col-span-full m-col-start-2 m-col-end-12">
+            <h3 id="project-name">Kids TV Channel Bumper</h3>
+            <hr class="col-span-full m-col-start-2 m-col-end-12">
+             <p class="summary">Created a TV bumper for a kids channel with full 3D animation in Cinema 4D, delivering a playful and engaging visual style that reflects the channel's fun and energetic identity.</p>
+             <h4 id="period">Project Period</h4>
+             <p class="details">2 Weeks</p>
+             <h4 id="role">Role</h4>
+             <p class="details">Motion Designer</p>
+             <h4 id="tools">Tools</h4>
+             <p class="details">Cinema 4D / After Effects</p>
+             <p class="copyrights">*This work is a student project created for educational purposes only. All trademarks, logos, and brand assets are the property of their respective owners.</p>
+             </div>
+
+              <div id="player-container" class="col-span-full m-col-start-2 m-col-end-12">
+      <h2 class="hidden">Video Player</h2>
+      <video controls preload="metadata" poster="images/kids-placeholder.jpg">
+        <source src="videos/kids-channel-bumper.mp4" type="video/mp4">
+        <source src="videos/kids-channel-bumper.webm" type="video/webm">
+        <p>You are using an older browser that does not support HTML5 Video. Please update your browser.</p>
+      </video>
+
+      <button id="center-play-button">
+        <img src="images/play.svg" alt="play icon">
+      </button>
+
+      <div class="video-controls hidden" id="video-controls">
+        <button id="play-button">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="pause-button">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button id="stop-button">
+          <i class="fa-solid fa-stop"></i>
+        </button>
+        <i class="fa fa-volume-up"></i>
+        <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+        <button id="full-screen">
+          <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+        </button>
+      </div>
+    </div>
+
+             
+             <picture class="col-span-full m-col-start-2 m-col-end-12 project-imags">
+                  <source media="(min-width: 1200px)" srcset="images/kids-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/kids-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/kids-600.jpg">
+                  <img src="images/kids-600.jpg" alt="kids bumper city">
+                </picture>
+
+                <picture class="col-span-full m-col-start-2 m-col-end-12 project-imags">
+                  <source media="(min-width: 1200px)" srcset="images/kids-ballon-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/kids-ballon-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/kids-ballon-600.jpg">
+                  <img src="images/kids-ballon-600.jpg" alt="kids bumper ballon">
+                </picture>
+
+                <div id="challenges" class="col-span-full m-col-start-2 m-col-end-12">
+                    <h4>Challenges</h4>
+                    <hr>
+                    <p>The biggest challenge was creating animations that truly captured children's attention. To produce a bumper that feels exciting and impossible to look away from, I conducted thorough research and refined my ideas beforehand.<br><br>The character design is intentionally simple—a cube with arms and legs—but I aimed to give it a cute and friendly personality. I also incorporated background elements to clearly express that the character is flying through the sky, adding a playful sense of motion.</p>
+                </div>
+
+                <picture class="col-span-full m-col-start-2 m-col-end-12 project-imags">
+                 <source media="(min-width: 1200px)" srcset="images/kids-model-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/kids-model-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/kids-model-600.jpg">
+                  <img src="images/kids-model-600.jpg" alt="zima cinema 4d image">
+                </picture>
+
+                <picture class="col-span-full m-col-start-2 m-col-end-12 project-imags">
+                  <source media="(min-width: 1200px)" srcset="images/kids-cn-1400.jpg">
+                  <source media="(min-width: 768px)" srcset="images/kids-cn-1100.jpg">
+                  <source media="(min-width: 300px)" srcset="images/kids-cn-600.jpg">
+                  <img src="images/kids-cn-600.jpg" alt="kids bumper Cartoon Network logo">
+                </picture>
+
+
+    <a href="elin.html" id="next-project" class="col-span-full m-col-start-2 m-col-end-12">Next Projct</a>
+
+        </seection>
+
+
+    </main>
+
+
+    <footer>
+        <div class="grid-con">
+            <h2 class="hidden">Footer Navigation</h2>
+            <div id="footer-message" class="col-span-full">
+              <p>Any project in your mind?</p>
+              <a href="contact.html">
+                Let's work together!
+              </a>
+            </div>
+
+            <hr id="footer-hr" class="col-span-full">
+            
+            <nav id="footer-nav" class="col-span-full">
+              <h3 class="visually-hidden">Fotter Links</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#work-show">WORKS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="contact-info" class="full-width-grid-con">
+          <div class="grid-con">
+              <p id="copyrights" class="col-span-full">&copy;2026 Rin Morito</p>
+              <div id="icons" class="col-span-full">
+                <a href="www.linkedin.com/in/rin-morito-7b9868329" aria-label="LinkedIn">
+                  <img src="images/linkedin.svg" alt="LinkedIn icon" class="social-icon">
+                </a>
+                <a href="https://github.com/oiovorin" aria-label="GitHub">
+                  <img src="images/github.svg" aria-label="GitHub icon" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/r___nn3/" aria-label="instagram">
+                  <img src="images/instagram.svg" alt="instagram icon" class="social-icon">
+                </a>
+              </div>
+            </div>
+            </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
