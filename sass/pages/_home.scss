@@ -119,43 +119,45 @@
         margin-top: 30px;
     }
 }
-#about {
-    margin: 90px auto;
-    
-    a {
-        color: #000;
-        text-decoration: none;
-        &:hover {
-            transform: scale(1.03);
-            transition: transform 0.2s ease-in-out;
-        }
 
-    #about-card {
-        height: max-content;
-        border: 2px solid abstracts.$rich-black;
-        border-radius: 30px;
-        margin: 0 auto;
+#about-card {
+    padding: 70px 0 80px 0;
 
-        img {
-            height: 260px;
-            background-color: #616161;
-        }
-
-        h3 {
-            font-size: 36px;
-            text-transform: uppercase;
-            font-weight: 900;
-            margin-left: 20px;
-            margin-bottom: 10px;
-            margin-top: 300px;// for now delete this when image ready
+    h3 {
+        font-size: 35px;
+            color: abstracts.$coral;
         }
 
         p {
-            margin: 0 20px 30px 20px;
+            margin-top: 15px;
         }
-    }
-    }
-}
+
+        a {
+            background-color: abstracts.$coral;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 20px 0 10px 0;
+            display: inline-block;
+            width: auto;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: abstracts.$rich-black;
+                transform: scale(1.05);
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+        img {
+            padding: 20px 30px 0px 0;
+            filter: drop-shadow(30px 30px abstracts.$rich-black);
+            height: 250px;
+            width: auto;
+        }
+
+        }
+
 
 @media screen and (min-width:768px) {
 
@@ -210,6 +212,27 @@
         text-align: center;
     }
 }
+
+#about-card {
+    padding: 100px 0;
+
+    h3 {
+        font-size: 45px;
+        margin-top: 40px;
+        }
+
+        a {
+            font-size: 18px;
+            padding: 15px 25px;
+            margin: 20px 0 10px 0;
+        }
+
+        img {
+            height: auto;
+            width: auto;
+        }
+
+        }
     
 }
 
