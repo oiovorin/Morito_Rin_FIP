@@ -15,9 +15,9 @@
 
     <title>Morito Rin Portfolio Contact</title>
 </head>
-<body>
+<body class="dark-body">
     <a href="#main" class="skip">Skip to main content</a>
-    <header>
+    <header class="dark-header">
         <h1 class="hidden">Rin Morito Portofolio Contact Page</h1>
         <div class="grid-con">
             <h2 class="hidden">Header Navigation</h2>
@@ -29,7 +29,7 @@
             <input type="checkbox" id="hamburger">
             <div id="mob-menu" class="col-start-4 col-end-5 m-col-auto">
             <label for="hamburger" id="menu-show" aria-label="menu">
-                <img src="images/menu-bar.svg" alt="hamburger menu bar" class="hamburger-menu-bar">
+                <img src="images/menu-bar-dark.svg" alt="hamburger menu bar" class="hamburger-menu-bar">
             </label>
             </div>
 
@@ -38,16 +38,15 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">HOME</a></li>
-                        <li><a href="work.html">WORKS</a></li>
+                        <li><a href="index.html#work-show">WORKS</a></li>
                         <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="contact.php">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <main id="main">
      <section id="contact">
 
         <div class="grid-con">
@@ -68,7 +67,7 @@ if(isset($_GET['msg'])) {
                 <p id="success-detail">' . nl2br(htmlspecialchars($_GET['msg']) ). '</p>
             </div>
             <div id="success-close-btn" class="col-span-full">
-                <a href="index.php">Back to home</a>
+                <a href="index.html">Back to home</a>
             </div>
         </div>
     </div>';
@@ -108,7 +107,7 @@ if(isset($_GET['msg'])) {
                 <h4 class="hidden">Email input</h4>
                 <label for="email" class="input-title">Email</label>
                 <?php
-                    if (isset($_GET['name'])) {
+                    if (isset($_GET['email'])) {
                         $email_value = htmlspecialchars($_GET['email'], ENT_QUOTES, 'UTF-8');
                     } else {
                         $email_value = '';
@@ -127,10 +126,10 @@ if(isset($_GET['msg'])) {
                     ?>
                     <select id="service" name="service" class="input-box" aria-placeholder="Please select" value="<?php echo $service_value; ?>">
                         <option value="">Please select</option>
-                        <option <?php if ($service_value == 'Branding') echo 'selected'; ?>>Branding</option>
-                        <option <?php if ($service_value == 'Web Design') echo 'selected'; ?>>Web Design</option>
-                        <option <?php if ($service_value == 'Web Development') echo 'selected'; ?>>Web Development</option>
-                        <option <?php if ($service_value == 'Others') echo 'selected'; ?>>Others</option>
+                        <option value="branding"  <?php if ($service_value == 'branding') echo 'selected'; ?>>Branding</option>
+                        <option value="web-design" <?php if ($service_value == 'web-design') echo 'selected'; ?>>Web Design</option>
+                        <option value="web-development" <?php if ($service_value == 'web-development') echo 'selected'; ?>>Web Development</option>
+                        <option value="others" <?php if ($service_value == 'Others') echo 'selected'; ?>>Others</option>
                     </select>
                 </div>
 
@@ -146,21 +145,20 @@ if(isset($_GET['msg'])) {
                     }
                     ?>
                 <textarea id="message" name="message" rows="12" cols="50"
-                    placeholder="Tell me more about the project(Vision, Scope/Program & Schdule)" value="<?php echo $message_value; ?>"></textarea>
+                    placeholder="Tell me more about the project(Vision, Scope/Program & Schdule)"><?php echo $message_value; ?></textarea>
                 </div>
 
                 <input type="submit" value="Submit" id="submit-btn" class="col-span-full m-col-start-5 m-col-end-9">
 </form>
         </div>
     </section>
-                </main>
 
-    <footer>
+   <footer class="dark-footer">
         <div class="grid-con">
             <h2 class="hidden">Footer Navigation</h2>
             <div id="footer-message" class="col-span-full">
               <p>Any project in your mind?</p>
-              <a href="contact.html">
+              <a href="contact.php">
                 Let's work together!
               </a>
             </div>
@@ -173,7 +171,7 @@ if(isset($_GET['msg'])) {
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="index.html#work-show">WORKS</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
