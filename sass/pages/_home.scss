@@ -103,6 +103,7 @@
         border-top: 2px solid abstracts.$rich-black;
     }
 
+
     h3.work-title {
         font-size: 24px;
         font-weight: 700;
@@ -112,6 +113,10 @@
     p.category {
         font-size: 14px;
         text-align: center;
+    }
+
+    #work-last {
+        margin-top: 30px;
     }
 }
 #about {
@@ -192,6 +197,19 @@
             height: 520px;
         }
     }
+
+    .work-con {
+    h3.work-title {
+        font-size: 27px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    p.category {
+        font-size: 16px;
+        text-align: center;
+    }
+}
     
 }
 
