@@ -11,15 +11,12 @@ video {
     margin-bottom: 5px;
 }
 
-#center-play-button {
-    position: absolute;
-    top: 45%;
-    left: 41%;
-}
 
-#center-play-button .fa-circle-play {
-  font-size: 45px;
-  color: abstracts.$rich-black;
+#center-play-button img {
+  height: 50px;
+  position: absolute;
+    top: 45%;
+    left: 47%
 }
 
 .video-controls.hidden {

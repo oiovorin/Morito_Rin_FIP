@@ -39,6 +39,7 @@ function stopVideo () {
     player.pause();
     player.currentTime = 0;
     centerPlayButton.style.display = "block";
+    player.load();
 }
 
 
