@@ -1,9 +1,24 @@
 @use '../abstracts';
 
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
 header {
 
     #header-logo, #menu-show img {
-        height: 50px;
+        height: 40px;
         width: auto;
         margin-top: 20px;
     }
@@ -41,17 +56,17 @@ header {
         top: 0;
         right: 0;
         height: 100vh;
-        width: 70vw;
+        width: 100vw;
         background-color: abstracts.$rich-black;
         opacity: 0;
         transform: translateX(100%);
-        z-index: 1000; 
-        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        z-index: 1000;
     }
 
     input#hamburger:checked ~ #header-nav {
         transform: translateX(0);
         opacity: 1;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     }
 
     #header-nav-close {
@@ -66,6 +81,14 @@ header {
     }
 }
 
+.coral-header {
+    background-color: abstracts.$coral;
+
+    #header-logo, #menu-show img {
+        margin-bottom: 10px;
+    }
+}
+
 .dark-header #header-nav {
     background-color: abstracts.$beige;
 }
@@ -77,9 +100,10 @@ header {
 .dark-header #header-nav-close {
     color: abstracts.$rich-black;
 }
+
 @media screen and (min-width: 768px) {
     header {
-        #menu-show, #header-nav-close {
+        #mob-menu, #header-nav-close {
             display: none;
         }
 
@@ -108,28 +132,19 @@ header {
             gap: 40px; 
             align-items: center;
             justify-content: flex-end;
+            margin-right: 20px;
         }
 
         #header-nav nav ul li a {
             color: #000;
-            font-size: 24px;
+            font-size: 20px;
             &:hover {
                 padding-bottom: 3px;
                 border-bottom: 4px solid abstracts.$rich-black;
             }
         }
-
-        #header-nav nav ul li:last-child a {
-            color: #fff;
-            background-color: abstracts.$rich-black;
-            padding: 8px 25px;
-            border-radius: 25px;
-            &:hover {
-                background-color: abstracts.$coral;
-                transition: all 0.3s ease-in-out;
-            }
-        }
     }
+
 .dark-header #header-nav nav ul li a {
     color: #fff;
 
@@ -143,16 +158,18 @@ header {
     background-color: transparent;
 }
 
-.dark-header #header-nav nav ul li:last-child a {
-            color: abstracts.$rich-black;
-            background-color: abstracts.$beige;
-            padding: 8px 25px;
-            border-radius: 25px;
-            &:hover {
-                background-color: abstracts.$coral;
-                transition: all 0.3s ease-in-out;
-            }
-    
+.coral-header {
+    #header-logo, #menu-show img {
+        margin-bottom: 0;
+    }
+
+    #header-nav ul li a {
+        color: #fff;
+
+        &:hover {
+            border-bottom: 4px solid #fff;
+        }
+    }
 }
 }
 
