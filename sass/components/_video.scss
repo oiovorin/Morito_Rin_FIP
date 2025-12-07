@@ -55,6 +55,14 @@ button {
     margin-left: auto;/* take up the room as mush as it can */
 }
 
+#timeline {
+  width: 250px;
+  margin-left: 20px;
+}
+
+#change-vol {
+  width: 120px;
+}
 /*********** Baseline, reset styles ***********/
 input[type="range"] {
   -webkit-appearance: none;
