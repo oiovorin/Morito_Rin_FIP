@@ -9,20 +9,21 @@
 
     <title>Morito Rin Portfolio About page</title>
 </head>
+<a href="#main" class="skip">Skip to main content</a>
 <body>
-    <header>
+    <header class="coral-header">
         <h1 class="hidden">Rin Morito Portofolio About Page</h1>
         <div class="grid-con">
             <h2 class="hidden">Header Navigation</h2>
-            <a href="index.html" class="col-start-1 col-span-1 m-col-start-1 m-col-end-2">
+            <a href="index.html" class="col-start-1 col-span-1 m-col-start-1 m-col-end-2" aria-label="home">
                 <img src="images/logo.svg" alt="logo" id="header-logo">
             </a>
 
 
             <input type="checkbox" id="hamburger">
             <div id="mob-menu" class="col-start-4 col-end-5 m-col-auto">
-            <label for="hamburger" id="menu-show">
-                <img src="images/menu-bar.svg" alt="hamburger menu bar" class="hamburger-menu-bar">
+            <label for="hamburger" id="menu-show" aria-label="menu">
+                <img src="images/menu-bar-coral.svg" alt="hamburger menu bar" class="hamburger-menu-bar">
             </label>
             </div>
 
@@ -31,7 +32,7 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">HOME</a></li>
-                        <li><a href="work.html">WORK</a></li>
+                        <li><a href="index.html#work-show">WORK</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="contact.html">CONTACT</a></li>
                     </ul>
@@ -40,41 +41,79 @@
         </div>
     </header>
 
+    <main id="main">
     <section id="about-me" class="grid-con">
         <h2 class="hidden">About me</h2>
-        <h3 class="col-span-full">Hello!<br>
+        <h3 class="col-span-full" id="title">Hello!<br>
             My name is Rin
         </h3>
 
-        <div id="about-img" class="col-span-full m-col-start-2 m-col-end-9"></div>
+        <div id="about-img" class="col-span-full m-col-start-1 m-col-end-7">
+            <picture>
+                  <source media="(min-width: 1200px)" srcset="images/rin-600.jpg">
+                  <source media="(min-width: 768px)" srcset="images/rin-1000.jpg">
+                  <source media="(min-width: 300px)" srcset="images/rin-600.jpg">
+                  <img src="images/rin-600.jpg" alt="Rin image">
+                </picture>
+        </div>
 
-        <p class="col-span-full m-col-start-2">thank you for visiting my portfolio.</p>
+        <div class="col-span-full m-col-start-7 m-col-end-12">
+            <article id="my-story">
+            <h4 class="hidden">My Story</h4>
+            <p>My interest in this industry began with the rudimentary Photoshop skills my mom taught me when I was young. From that day on, computers became a part of my life, and my interests expanded beyond design into various creative fields like programming. I aspire to be a bridge, delivering your vision to users through the medium of design.
+            I promise to dedicate my full effort to making this a reality.</p>
+            </article>
 
-        <h3 class="introduce col-span-full">Rin Morito</h3>
-
-        <h4 class="col-span-full">Bio</h4>
-        <h4 class="col-span-full">Experience</h4>
+            <article id="bio">
+             <h4 class="hidden">Bio</h4>
+             <hr>
+             <h5>Rin Morito</h5>
+             <p>Designer / Developer<br>
+            Based in London Ontario.<br>
+            Specialize in front-end development, UI design, and creating interactive digital experiences.</p>
+            </article>
+        </div>
     </section>
+    </main>
 
     <footer>
         <div class="grid-con">
             <h2 class="hidden">Footer Navigation</h2>
-            <div class="col-span-full m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">
-                <a href="index.html">
-                    <img src="images/logo.svg" alt="logo" id="footer-logo">
-                </a>
-                <p id="footer-text">From sketch to screen, I make it move.</p>
+            <div id="footer-message" class="col-span-full">
+              <p>Any project in your mind?</p>
+              <a href="contact.html">
+                Let's work together!
+              </a>
             </div>
+
+            <hr id="footer-hr" class="col-span-full">
             
-            <nav id="footer-nav" class="col-span-full m-col-start-8 m-col-end-13 l-col-start-7 l-col-end-13">
+            <nav id="footer-nav" class="col-span-full">
+              <h3 class="visually-hidden">Fotter Links</h3>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="work.html">WORKS</a></li>
-                    <li><a href="about">ABOUT</a></li>
-                    <li><a href="contact">CONTACT</a></li>
+                    <li><a href="index.html#work-show">WORKS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
+        <div id="contact-info" class="full-width-grid-con">
+          <div class="grid-con">
+              <p id="copyrights" class="col-span-full">&copy;2026 Rin Morito</p>
+              <div id="icons" class="col-span-full">
+                <a href="www.linkedin.com/in/rin-morito-7b9868329" aria-label="LinkedIn">
+                  <img src="images/linkedin.svg" alt="LinkedIn icon" class="social-icon">
+                </a>
+                <a href="https://github.com/oiovorin" aria-label="GitHub">
+                  <img src="images/github.svg" aria-label="GitHub icon" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/r___nn3/" aria-label="instagram">
+                  <img src="images/instagram.svg" alt="instagram icon" class="social-icon">
+                </a>
+              </div>
+            </div>
+            </div>
     </footer>
     <script src="js/main.js"></script>
 </body>
