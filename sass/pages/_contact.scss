@@ -1,16 +1,25 @@
 @use '../abstracts';
 
-#contact h2 {
+.dark-body {
+    color: #fff;
+    background-color: #292624;
+}
+
+#contact {
+    margin: 130px auto;
+
+    h3 {
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 900;
     text-align: center;
-    margin: 50px auto;
 }
 
+p#sub-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
 #contactform-box {
-    border: 2px solid #000;
-    border-radius: 15px;
     text-transform: uppercase;
     padding: 20px;
     box-sizing: border-box;
@@ -21,11 +30,30 @@
     width: 100%;
     margin-bottom: 20px;
     margin-top: 5px;
+    font-family: "Albert Sans", sans-serif;
+    color: #fff;
 }
 
+input::placeholder {
+    color: #a1a1a1;
+}
 #contactform-box textarea {
     width: 100%;
-}
+    background-color: transparent;
+        outline: none;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        height: 230px;
+        font-family: "Albert Sans", sans-serif;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+        
+        textarea::placeholder {
+            color: #a1a1a1;
+            padding-top: 5px;
+            padding-left: 5px;
+        }
 
 #contactform-box  p {
     margin: 10px 0;
@@ -36,28 +64,51 @@
     font-weight: 900;
 }
 
-label.option {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 0;
-    text-transform: none;
+.input-box {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
 }
 
-#contactform-box input[type="checkbox"] {
-  vertical-align: middle;
-  width: 20px;
-  height: 20px;
-  margin: 10px 5px 15px 5px;
-  accent-color: #000; 
-}
+select {
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-family: "Albert Sans", sans-serif;
+    color: #a1a1a1;
+    
+        select option[value="branding"],
+        select option[value="web-design"],
+        select option[value="web-development"],
+        select option[value="others"] {
+            color: #fff !important;
+        }
+    }
 
-#offer-option {
-    margin-bottom: 30px;
+input#submit-btn {
+    background-color: #ffffff;
+        color: #292624;
+    outline: none;
+        height: 60px;
+        margin-top: 30px;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        }
+        }
+        
+        @media screen and (min-width:768px) {
+            input#submit-btn {
+                transform: scale(1);
+                transition: all 0.3s ease-in-out;
+        
+                &:hover {
+                    transform: scale(1.05);
+                    filter: drop-shadow(5px 5px rgba(30, 30, 30, 0.235));
+        
+                }
+            }
 }
-
-#submit-btn {
-    background-color: #7D7D7D;
-    color: #fff;
-    margin: 0 auto;
-}
-
