@@ -1,10 +1,9 @@
 @use '../abstracts';
 
-#hero {
-    background-color: rgba(128, 128, 128, 0.379);
-    height: 500px;
-    margin-bottom: 70px;
+#hero img {
+    margin: 80px auto;
 }
+
 
 #my-skills {
     background-color: abstracts.$rich-black;
