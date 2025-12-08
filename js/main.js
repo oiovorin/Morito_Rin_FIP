@@ -22,7 +22,7 @@ const volumeSlider = document.querySelector("#change-vol");
 const fullScreen = document.querySelector("#full-screen");
 
 
-
+if (player && playerCon && videoControls) {
 player.controls = false;
 videoControls.classList.remove('hidden');
 
@@ -80,6 +80,7 @@ function hideControls () {
     videoControls.classList.add('hide');
 }
 
+
 centerPlayButton.addEventListener("click", playVideo);
 playButton.addEventListener("click", playVideo);
 player.addEventListener("ended", showCenterPlay)
@@ -94,11 +95,13 @@ videoControls.addEventListener("mouseenter", showControls);
 videoControls.addEventListener("mouseleave", hideControls);
 player.addEventListener("mouseenter", showControls);
 player.addEventListener("mouseleave", hideControls);
+}
 
 
 // work gallery slide
 carousel = function(id) {
 const container = document.querySelector(id + '.work-gallery-con');
+if (!container) return;
   const workCards = container.querySelectorAll('.work-card');
   const preBtn = container.querySelector('.previous');
   const nextBtn = container.querySelector('.next');
@@ -146,6 +149,214 @@ carousel('#elin');
 carousel('#loop');
 carousel('#zima');
 carousel('#kids');
+
+//gsap animation
+// ----------------- home ---------------------------
+gsap.registerPlugin(ScrollTrigger);
+
+const mySkills = document.querySelector("#my-skills");
+if (mySkills) {
+    gsap.from(mySkills, {
+      opacity: 0,
+      y: 50,
+      ease: "power1.out",
+      duration: 0.5,
+        scrollTrigger: {
+            trigger: mySkills,
+            start: "top 80%",
+            end: "top 80%"
+        }
+    })
+}
+
+const skills = document.querySelectorAll("#my-skills .skill");
+if (skills.length > 0) {
+    gsap.from(skills, {
+      opacity: 0,
+      y: 100,
+      ease: "power1.out",
+      stagger: 0.7,
+      duration: 0.5,
+        scrollTrigger: {
+            trigger: "#my-skills",
+            start: "top 40%",
+            end: "top 50%",
+            scrub: 2
+        }
+    })
+}
+
+const video = document.querySelector("video");
+if (video) {
+    gsap.from(video, {
+      opacity: 0,
+      y: 80,
+      ease: "power1.out",
+      stagger: 0.7,
+      duration: 0.5,
+        scrollTrigger: {
+            trigger: video,
+            start: "top 90%",
+            end: "top 50%",
+            scrub: 0.5
+        }
+    })
+}
+
+const workCon = document.querySelectorAll(".work-con");
+if (workCon.length > 0) {
+    gsap.from(workCon, {
+      duration: 0.5,
+      opacity: 0,
+      scale: 0,
+      stagger: 0.3,
+      ease: "back.out(1.5)",
+      scrollTrigger: {
+            trigger: "#work-show",
+            start: "top 30%",
+            end: "top 50%",
+            scrub: 2
+        }
+    });}
+
+
+const aboutCard = document.querySelector("#about-card");
+if (aboutCard) {
+    gsap.from(aboutCard, {
+      opacity: 0,
+      x: -50,
+      ease: "power1.out",
+      stagger: 0.7,
+      duration: 0.5,
+        scrollTrigger: {
+            trigger: aboutCard,
+            start: "top 60%",
+            end: "top 50%",
+            scrub: 0.5
+        }
+    })
+}
+
+
+    // ---------------- about --------------
+
+const aboutTitle = document.querySelector("#title");
+if (aboutTitle) {
+    gsap.from(aboutTitle, {
+        opacity: 0,
+        y: 100,
+        ease: "power1.out",
+      duration: 1
+    })
+}
+
+const aboutImg = document.querySelector("#about-img");
+if (aboutImg) {
+    gsap.from(aboutImg, {
+        opacity: 0,
+        x: -100,
+        ease: "power1.out",
+      duration: 1
+    })
+}
+
+const aboutText = document.querySelector("#about-text");
+if (aboutText) {
+    gsap.from(aboutText, {
+        opacity: 0,
+        x: 100,
+        ease: "power1.out",
+      duration: 1
+    })
+}
+
+
+  // ------------ contact --------------
+  const contact = document.querySelector("#contact");
+  if (contact) {
+  gsap.from(contact, {
+      opacity: 0,
+      x: -100,
+      ease: "power1.out",
+      stagger: 0.7,
+      duration: 1
+    })
+}
+
+
+    console.log("gsap:", gsap);
+console.log("ScrollTrigger:", ScrollTrigger);
+
+
+// ------------- case study ------------------------
+const intro = document.querySelector("#intro");
+if (intro) {
+    gsap.from(intro, {
+      opacity: 0,
+      x: -50,
+      ease: "power1.out",
+      stagger: 0.7,
+      duration: 1
+    })
+}
+
+const projectImg = document.querySelectorAll(".project-imags");
+if (projectImg.length > 0) {
+    projectImg.forEach((img) => {
+    gsap.from(img, {
+      opacity: 0,
+      x: -50,
+      ease: "power1.out",
+      duration: 1,
+        scrollTrigger: {
+            trigger: img,
+            start: "top 60%",
+            end: "top 50%",
+            scrub: 1
+        }
+    })
+});
+}
+
+const challenge = document.querySelector("#challenges");
+if (challenge) {
+    gsap.from(challenge, {
+      opacity: 0,
+      x: -50,
+      ease: "power1.out",
+      duration: 1,
+        scrollTrigger: {
+            trigger: challenge,
+            start: "top 60%",
+            end: "top 50%",
+            scrub: 1
+        }
+    })
+}
+
+// ---------- header --------------
+gsap.from("header", {
+      opacity: 0,
+      y: -10,
+      ease: "power1.out",
+      stagger: 0.7,
+      duration: 1
+    })
+
+// ---------- footer ---------------
+gsap.from("footer", {
+      opacity: 0,
+      y: 50,
+      ease: "power1.out",
+      stagger: 0.7,
+      duration: 1,
+      scrollTrigger: {
+            trigger: "footer",
+            start: "top 90%",
+            end: "top 50%",
+            scrub: 1
+        }
+    })
 
 
 })();
