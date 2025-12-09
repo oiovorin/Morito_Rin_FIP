@@ -28,8 +28,8 @@
 
             <input type="checkbox" id="hamburger">
             <div id="mob-menu" class="col-start-4 col-end-5 m-col-auto">
-            <label for="hamburger" id="menu-show" aria-label="menu">
-                <img src="images/menu-bar-dark.svg" alt="hamburger menu bar" class="hamburger-menu-bar">
+            <label for="hamburger" id="menu-show">
+                <img src="images/menu-bar-dark.svg" alt="menu" class="hamburger-menu-bar">
             </label>
             </div>
 
@@ -47,6 +47,7 @@
         </div>
     </header>
 
+    <main id="main">
      <section id="contact">
 
         <div class="grid-con">
@@ -115,7 +116,7 @@ if(isset($_GET['msg'])) {
                     ?>
                 <input type="text" id="email" name="email" class="input-box" placeholder="Enter Email" value="<?php echo $email_value; ?>">
 
-                <h4 class="hidden">Offer option checkbox</h4>
+                <h4 class="hidden">Service option select</h4>
                     <label for="service" class="input-title">What I offer</label>
                     <?php
                     if (isset($_GET['service'])) {
@@ -152,13 +153,14 @@ if(isset($_GET['msg'])) {
 </form>
         </div>
     </section>
+                </main>
 
    <footer class="dark-footer">
         <div class="grid-con">
             <h2 class="hidden">Footer Navigation</h2>
             <div id="footer-message" class="col-span-full">
               <p>Any project in your mind?</p>
-              <a href="contact.php">
+              <a href="contact.php" aria-label="contact">
                 Let's work together!
               </a>
             </div>
@@ -179,7 +181,7 @@ if(isset($_GET['msg'])) {
           <div class="grid-con">
               <p id="copyrights" class="col-span-full">&copy;2026 Rin Morito</p>
               <div id="icons" class="col-span-full">
-                <a href="www.linkedin.com/in/rin-morito-7b9868329" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/rin-morito-7b9868329" aria-label="LinkedIn">
                   <img src="images/linkedin.svg" alt="LinkedIn icon" class="social-icon">
                 </a>
                 <a href="https://github.com/oiovorin" aria-label="GitHub">

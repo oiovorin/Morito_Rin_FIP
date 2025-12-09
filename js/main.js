@@ -114,7 +114,6 @@ function updateCard () {
     });
     
     workCards[currentIndex].style.display = "block";
-    console.log("called");
 }
 
 function nextCard () {
@@ -282,10 +281,6 @@ if (aboutText) {
       duration: 1
     })
 }
-
-
-    console.log("gsap:", gsap);
-console.log("ScrollTrigger:", ScrollTrigger);
 
 
 // ------------- case study ------------------------

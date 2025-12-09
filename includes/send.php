@@ -84,13 +84,7 @@
             exit();
         }
     } else {
-        echo '<div id="error-box">
-      <div> <img src="images/error.svg" alt="error icon">
-      </div>
-      <div>
-        <p id="error-title">Error!</p>
-        <p id="error-detail">Please make sure to fill up all sections</p>
-      </div>
-    </div>';
+        header("Location: ../contact.php");
+        exit();
     }
 ?>
