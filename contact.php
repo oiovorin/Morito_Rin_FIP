@@ -181,7 +181,7 @@ if(isset($_GET['msg'])) {
           <div class="grid-con">
               <p id="copyrights" class="col-span-full">&copy;2026 Rin Morito</p>
               <div id="icons" class="col-span-full">
-                <a href="www.linkedin.com/in/rin-morito-7b9868329" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/rin-morito-7b9868329" aria-label="LinkedIn">
                   <img src="images/linkedin.svg" alt="LinkedIn icon" class="social-icon">
                 </a>
                 <a href="https://github.com/oiovorin" aria-label="GitHub">
