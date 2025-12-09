@@ -4,8 +4,7 @@
 
     $enviro = 'localhost';
     $uname = 'root';
-    $password = 'root'; // for windows
-    /*$password = 'root'; for mac */
+    $password = 'root'; 
 
     $db = 'db_bookstore';
 
