@@ -17,7 +17,7 @@ Here, you’ll find a collection of projects that highlight my strengths in **we
 ---
 
 ## 👩🏻‍💻 About
-This portfolio was designed and developed to showcase my skills as an **Interactive Designer & Developer**.
+This portfolio was designed and developed to showcase my skills as an **Interactive Designer / Developer**.
 It represents my passion for combining visual design, interactivity, and user-centered thinking to create meaningful digital experiences.
 
 My goal is to design and develop visually appealing, responsive, and interactive web experiences that effectively tell a story.
@@ -32,6 +32,8 @@ Here’s an overview of the skills showcased in this portfolio:
 - CSS3  
 - JavaScript  
 - Sass
+- PHP
+- GSAP
 
 ### 🧰 Design Tools
 - Figma  
@@ -54,6 +56,19 @@ Here’s an overview of the skills showcased in this portfolio:
 🧩 **Dynamic JavaScript Content** – Showcasing interactivity and logic  
 📂 **Project Sections** – Detailed breakdown of each project’s objectives and outcomes  
 📫 **Contact Info** – Links to email, LinkedIn, and other professional channels  
+
+---
+
+## JavaScript Features
+**Image Gallary** - Used carousel to show project images
+**Video Player** - Play, Pause, Stop, Timeline, Valume, and Full screen mode
+**GSAP Animation** - ScrollTrigger animation, Interactivity
+
+---
+
+## PHP Features
+**Contact Form Validation** - Error show when some form is not filled
+**Thank you message** - Tell user that message has sent successfully
 
 ---
 
