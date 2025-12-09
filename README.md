@@ -59,6 +59,19 @@ Here’s an overview of the skills showcased in this portfolio:
 
 ---
 
+## JavaScript Features
+**Image Gallary** - Used carousel to show project images
+**Video Player** - Play, Pause, Stop, Timeline, Valume, and Full screen mode
+**GSAP Animation** - ScrollTrigger animation, Interactivity
+
+---
+
+## PHP Features
+**Contact Form Validation** - Error show when some form is not filled
+**Thank you message** - Tell user that message has sent successfully
+
+---
+
 ## 🛠️ Technologies & Tools
 - **Web:** HTML5, CSS3, JavaScript, Sass, IIFE, PHP, Greensock
 - **Design:** Figma, Adobe Illustrator, Photoshop  
