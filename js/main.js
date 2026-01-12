@@ -9,6 +9,17 @@ navLinks.forEach(link => {
   });
 })
 
+// hero animation
+gsap.registerPlugin(ScrollTrigger);
+
+
+gsap.from(".animated-by-word", {
+        duration: 1,
+        autoAlpha: 0,
+        stagger: .5
+    });
+
+
 // video
 const playerCon = document.querySelector("#player-container");
 const player = document.querySelector("video");
@@ -151,7 +162,6 @@ carousel('#kids');
 
 //gsap animation
 // ----------------- home ---------------------------
-gsap.registerPlugin(ScrollTrigger);
 
 const mySkills = document.querySelector("#my-skills");
 if (mySkills) {
