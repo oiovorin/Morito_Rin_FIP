@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>Morito Rin Portfolio Homepage</title>
+    <title>Zima Case Study Page</title>
 </head>
 <body>
    <header>
-        <h1 class="hidden">Rin Morito Portofolio Case Study: Zima</h1>
         <div class="grid-con">
-            <h2 class="hidden">Header Navigation</h2>
             <a href="index.html" class="col-start-1 col-span-1 m-col-start-1 m-col-end-2" aria-label="home">
                 <img src="images/logo.svg" alt="logo" id="header-logo">
             </a>
@@ -22,18 +20,18 @@
             <input type="checkbox" id="hamburger">
             <div id="mob-menu" class="col-start-4 col-end-5 m-col-auto">
             <label for="hamburger" id="menu-show">
-                <img src="images/menu-bar.svg" alt="menu" class="hamburger-menu-bar">
+                <img src="images/menu-bar.svg" alt="menu bar" class="hamburger-menu-bar">
             </label>
             </div>
 
             <div id="header-nav" class="m-col-start-4 m-col-end-13 l-col-start-5 l-col-end-13">
                 <label for="hamburger" id="header-nav-close">X</label>
-                <nav>
+                <nav aria-label="header-navigation">
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="index.html#work-show">WORK</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="contact.php">CONTACT</a></li>
+                        <li><a href="index.html" aria-label="go to home page">HOME</a></li>
+                        <li><a href="#work-show" aria-label="go to work page">WORK</a></li>
+                        <li><a href="about.html" aria-label="go to about page">ABOUT</a></li>
+                        <li><a href="contact.php" aria-label="go to contact page">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -41,18 +39,18 @@
     </header>
     <main id="main">
         <section class="grid-con">
-            <h2 class="hidden">Zima case study</h2>
+            <h1 class="hidden">Zima case study</h1>
             <div id="intro" class="col-span-full m-col-start-2 m-col-end-12">
-            <h3 id="project-name">Zima</h3>
+            <h2 id="project-name">Zima</h2>
             <hr class="col-span-full m-col-start-2 m-col-end-12">
              <p class="summary">Reimagined Zima, a classic lemon-lime beverage brand, with branding, packaging, 3D modeling, web design, and advertising. The project modernizes the brand while keeping its unique personality.</p>
-             <h4 id="period">Project Period</h4>
+             <h3 id="period">Project Period</h3>
              <p class="details">10 Weeks</p>
-             <h4 id="role">Role</h4>
+             <h3 id="role">Role</h3>
              <p class="details">Graphic Designer / Package Designer /  Motion Designer / Web Developer</p>
-             <h4 id="tools">Tools</h4>
+             <h3 id="tools">Tools</h3>
              <p class="details">VS Code / Photoshop / Illustorator / Cinema 4D / After Effects</p>
-             <h4 id="collab">Collaborate With</h4>
+             <h3 id="collab">Collaborate With</h3>
              <p class="details">Hannah Silva</p>
              <p class="copyrights">*This work is a student project created for educational purposes only. All trademarks, logos, and brand assets are the property of their respective owners.</p>
              </div>
@@ -97,7 +95,7 @@
                 </div>
 
                 <div id="challenges" class="col-span-full m-col-start-2 m-col-end-12">
-                    <h4>Challenges</h4>
+                    <h3>Challenges</h3>
                     <hr>
                     <p>A major challenge was newly learning and applying the modeling and material-creation workflow in Cinema 4D. Since this was my first project using this software in a practical context, I needed to understand the interface, experiment with different material properties, and refine the modeling process through continuous trial and error.<br><br>In addition, I aimed to incorporate visual elements inspired by the name “Zima,” which means “winter” in several languages, and develop a snowflake motif that would feel modern rather than cliché. Balancing this concept with a clean and cohesive brand identity required constant iteration, design refinement, and thoughtful decision-making throughout the project.</p>
                 </div>
@@ -117,7 +115,7 @@
                 </picture>
 
 
-    <a href="kids.html" id="next-project" class="col-span-full m-col-start-2 m-col-end-12">Next Projct</a>
+    <a href="kids.html" id="next-project" class="col-span-full m-col-start-2 m-col-end-12" aria-label="next project">Next Projct</a>
 
         </section>
 
@@ -127,23 +125,21 @@
 
     <footer>
         <div class="grid-con">
-            <h2 class="hidden">Footer Navigation</h2>
             <div id="footer-message" class="col-span-full">
               <p>Any project in your mind?</p>
-              <a href="contact.php" aria-label="contact">
+              <a href="contact.php" aria-label="contact me">
                 Let's work together!
               </a>
             </div>
 
             <hr id="footer-hr" class="col-span-full">
             
-            <nav id="footer-nav" class="col-span-full">
-              <h3 class="visually-hidden">Fotter Links</h3>
+            <nav id="footer-nav" class="col-span-full" aria-label="footer navigation">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="index.html#work-show">WORKS</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.php">CONTACT</a></li>
+                    <li><a href="index.html" aria-label="go to home page">HOME</a></li>
+                    <li><a href="#work-show" aria-label="go to work page">WORKS</a></li>
+                    <li><a href="about.html" aria-label="go to aboout page">ABOUT</a></li>
+                    <li><a href="contact.php" aria-label="go to contact page">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -151,13 +147,13 @@
           <div class="grid-con">
               <p id="copyrights" class="col-span-full">&copy;2026 Rin Morito</p>
               <div id="icons" class="col-span-full">
-                <a href="https://www.linkedin.com/in/rin-morito-7b9868329" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/rin-morito-7b9868329" aria-label="Rin LinkedIn">
                   <img src="images/linkedin.svg" alt="LinkedIn icon" class="social-icon">
                 </a>
-                <a href="https://github.com/oiovorin" aria-label="GitHub">
+                <a href="https://github.com/oiovorin" aria-label="Rin GitHub">
                   <img src="images/github.svg" aria-label="GitHub icon" class="social-icon">
                 </a>
-                <a href="https://www.instagram.com/r___nn3/" aria-label="instagram">
+                <a href="https://www.instagram.com/r___nn3/" aria-label="Rin instagram">
                   <img src="images/instagram.svg" alt="instagram icon" class="social-icon">
                 </a>
               </div>

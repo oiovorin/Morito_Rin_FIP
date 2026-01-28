@@ -113,7 +113,7 @@ html {
 
 
 #work-show {
-    h3#section-title {
+    h2#section-title {
         font-size: 40px;
         margin: 50px auto 20px auto;
     }
@@ -158,9 +158,10 @@ html {
 #about-card {
     padding: 70px 0 80px 0;
 
-    h3 {
-        font-size: 35px;
-            color: abstracts.$coral;
+    p#who {
+        font-size: 40px;
+        color: abstracts.$coral;
+        font-weight: 700;
         }
 
         p {
