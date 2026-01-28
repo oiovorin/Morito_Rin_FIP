@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>Morito Rin Portfolio Homepage</title>
+    <title>Elin Case Study Page</title>
 </head>
 <body>
   <a href="#main" class="skip">Skip to main content</a>
-    <header>
-        <h1 class="hidden">Rin Morito Portofolio Case Study: Elin</h1>
+   <header>
         <div class="grid-con">
-            <h2 class="hidden">Header Navigation</h2>
             <a href="index.html" class="col-start-1 col-span-1 m-col-start-1 m-col-end-2" aria-label="home">
                 <img src="images/logo.svg" alt="logo" id="header-logo">
             </a>
@@ -23,18 +21,18 @@
             <input type="checkbox" id="hamburger">
             <div id="mob-menu" class="col-start-4 col-end-5 m-col-auto">
             <label for="hamburger" id="menu-show">
-                <img src="images/menu-bar.svg" alt="menu" class="hamburger-menu-bar">
+                <img src="images/menu-bar.svg" alt="menu bar" class="hamburger-menu-bar">
             </label>
             </div>
 
             <div id="header-nav" class="m-col-start-4 m-col-end-13 l-col-start-5 l-col-end-13">
                 <label for="hamburger" id="header-nav-close">X</label>
-                <nav>
+                <nav aria-label="header-navigation">
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="index.html#work-show">WORK</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="contact.php">CONTACT</a></li>
+                        <li><a href="index.html" aria-label="go to home page">HOME</a></li>
+                        <li><a href="#work-show" aria-label="go to work page">WORK</a></li>
+                        <li><a href="about.html" aria-label="go to about page">ABOUT</a></li>
+                        <li><a href="contact.php" aria-label="go to contact page">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,18 +40,18 @@
     </header>
     <main id="main">
         <section class="grid-con">
-            <h2 class="hidden">Elin Case Study</h2>
+            <h1 class="hidden">Elin Case Study</h1>
             <div id="intro" class="col-span-full m-col-start-2 m-col-end-12">
-            <h3 id="project-name">Elin</h3>
+            <h2 id="project-name">Elin</h2>
             <hr class="col-span-full m-col-start-2 m-col-end-12">
              <p class="summary">Developed a full brand identity for Elin, an imaginary skincare brand inspired by camellia flowers. The project included branding, graphic design, and video commercials showcasing Elin's gentle, natural, and modern approach.</p>
-             <h4 id="period">Project Period</h4>
+             <h3 id="period">Project Period</h3>
              <p class="details">4 Weeks</p>
-             <h4 id="role">Role</h4>
+             <h3 id="role">Role</h3>
              <p class="details">Graphic Designer / Motion Designer</p>
-             <h4 id="tools">Tools</h4>
+             <h3 id="tools">Tools</h3>
              <p class="details">Photoshop / Illustorator / After Effects</p>
-             <h4 id="collab">Collaborate With</h4>
+             <h3 id="collab">Collaborate With</h3>
              <p class="details">Linh Nguyen</p>
              </div>
 
@@ -96,7 +94,7 @@
                 </div>
 
                 <div id="challenges" class="col-span-full m-col-start-2 m-col-end-12">
-                    <h4>Challenges</h4>
+                    <h3>Challenges</h3>
                     <hr>
                     <p>The main challenge was differentiating the brand from the countless other skincare companies on the market and building a brand identity that is unique while still remaining clean and simple.<br>To achieve this, I established a strong brand story before moving into the design phase and developed a visual concept that truly resonates with the target audience.<br><br>In the promotional video, I focused on maintaining a cohesive tone while conveying the background of the brand in a concise manner, elevating it into an advertising piece that represents Elin as a whole.</p>
                 </div>
@@ -116,7 +114,7 @@
                 </picture>
 
                 <div id="player-container" class="col-span-full m-col-start-2 m-col-end-12">
-      <h2 class="hidden">Elin Video Player</h2>
+      <h3 class="hidden">Elin Video Player</h3>
       <video controls preload="metadata" poster="images/elin-placeholder.jpg">
         <source src="videos/elin_video.mp4" type="video/mp4">
         <source src="videos/elin_video.webm" type="video/webm">
@@ -140,7 +138,7 @@
         <input type="range" id="timeline" step="0.2" min="0">
         <i class="fa fa-volume-up"></i>
         <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
-        <button id="full-screen">
+        <button id="full-screen" aria-label="full screen mode">
           <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
         </button>
       </div>
@@ -154,25 +152,23 @@
     </main>
 
 
-    <footer>
+   <footer>
         <div class="grid-con">
-            <h2 class="hidden">Footer Navigation</h2>
             <div id="footer-message" class="col-span-full">
               <p>Any project in your mind?</p>
-              <a href="contact.php" aria-label="contact">
+              <a href="contact.php" aria-label="contact me">
                 Let's work together!
               </a>
             </div>
 
             <hr id="footer-hr" class="col-span-full">
             
-            <nav id="footer-nav" class="col-span-full">
-              <h3 class="visually-hidden">Fotter Links</h3>
+            <nav id="footer-nav" class="col-span-full" aria-label="footer navigation">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="index.html#work-show">WORKS</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.php">CONTACT</a></li>
+                    <li><a href="index.html" aria-label="go to home page">HOME</a></li>
+                    <li><a href="#work-show" aria-label="go to work page">WORKS</a></li>
+                    <li><a href="about.html" aria-label="go to aboout page">ABOUT</a></li>
+                    <li><a href="contact.php" aria-label="go to contact page">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -180,13 +176,13 @@
           <div class="grid-con">
               <p id="copyrights" class="col-span-full">&copy;2026 Rin Morito</p>
               <div id="icons" class="col-span-full">
-                <a href="https://www.linkedin.com/in/rin-morito-7b9868329" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/rin-morito-7b9868329" aria-label="Rin LinkedIn">
                   <img src="images/linkedin.svg" alt="LinkedIn icon" class="social-icon">
                 </a>
-                <a href="https://github.com/oiovorin" aria-label="GitHub">
+                <a href="https://github.com/oiovorin" aria-label="Rin GitHub">
                   <img src="images/github.svg" aria-label="GitHub icon" class="social-icon">
                 </a>
-                <a href="https://www.instagram.com/r___nn3/" aria-label="instagram">
+                <a href="https://www.instagram.com/r___nn3/" aria-label="Rin instagram">
                   <img src="images/instagram.svg" alt="instagram icon" class="social-icon">
                 </a>
               </div>
