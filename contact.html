@@ -6,17 +6,18 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <script type="module" src="js/main.js"></script>
 
     <title>Morito Rin Portfolio Contact</title>
 </head>
-<body class="dark-body">
+<body class="dark-body" data-page="contact">
     <a href="#main" class="skip">Skip to main content</a>
     <header class="dark-header">
         <h1 class="hidden">Rin Morito Portofolio Contact Page</h1>
         <div class="grid-con">
             <h2 class="hidden">Header Navigation</h2>
             <a href="index.html" class="col-start-1 col-span-1 m-col-start-1 m-col-end-2" aria-label="home">
-                <img src="images/logo.svg" alt="logo" id="header-logo">
+                <img src="images/logo-beige-brown-circle.svg" alt="logo" id="header-logo">
             </a>
 
 
@@ -34,7 +35,7 @@
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="index.html#work-show">WORKS</a></li>
                         <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="contact.php">CONTACT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -51,17 +52,14 @@
         <p class="col-span-full" id="sub-title">Turning your ideas into reality</p>
         </div>
         <div id="contactform-box">
-            <form action="/action_page.php" class="grid-con">
+            <form id="contact-form" class="grid-con">
 
                 <div class="col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-7">
-                    <h4 class="hidden">Name input</h4>
-                    <label for="fname" class="input-title">Name</label>
-                    <input type="text" id="fname" name="fname" class="input-box" placeholder="First Name & Last">
+                    <label for="fullname" class="input-title">Name</label>
+                    <input type="text" id="fullname" name="fullname" class="input-box" placeholder="First Name & Last">
 
-                <h4 class="hidden">Email input</h4>
-                <label for="email" class="input-title">Email</label>
-                <input type="text" id="email" name="email" class="input-box" placeholder="Enter Email">
-                <h4 class="hidden">Offer option checkbox</h4>
+                    <label for="email" class="input-title">Email</label>
+                    <input type="text" id="email" name="email" class="input-box" placeholder="Enter Email">
                     <label for="service" class="input-title">What I offer</label>
                     <select id="service" name="service" class="input-box" aria-placeholder="Please select">
                         <option value="">Please select</option>
@@ -74,13 +72,14 @@
 
 
                 <div class="col-span-full m-col-start-3 m-col-end-11 l-col-start-7 l-col-end-12">
-                <h4 class="hidden">Message input</h4>
                 <label for="message" class="input-title">Project Details</label>
                 <textarea id="message" name="message" rows="12" cols="50"
                     placeholder="Tell me more about the project(Vision, Scope/Program & Schdule)"></textarea>
                 </div>
 
                 <input type="submit" value="Submit" id="submit-btn" class="col-span-full m-col-start-5 m-col-end-9">
+
+                <div id="feedback" class="col-span-full"><p>*Please fill out all required sections</p></div>
 </form>
         </div>
     </section>
@@ -127,6 +126,5 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
