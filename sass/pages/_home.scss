@@ -1,20 +1,272 @@
 @use '../abstracts';
 
-#hero {
-    background-color: rgba(128, 128, 128, 0.379);
-    height: 500px;
-    margin-bottom: 70px;
+html {
+  scroll-behavior: smooth;
 }
+
+/* HERO SECTION STYLE */
+#hero {
+    position: relative;
+        z-index: -100;
+    
+        .identity {
+            color: abstracts.$coral;
+            font-size: 25px;
+            margin-top: 80px;
+    
+            span {
+                font-family: 'Genica';
+                font-size: 70px;
+            }
+        }
+    
+        #charactors {
+            display: flex;
+            align-items: end;
+            margin-top: 100px;
+            height: 350px;
+            justify-content: center;
+    
+    
+            #charactor-1 {
+                width: 140px;
+                height: 340px;
+                background: linear-gradient(135deg,#7dff8a 0%,#35d46a 40%,#12b35a 70%,#0c8f47 100%);
+                position: relative;
+                animation: char1-body 15s ease-in-out infinite, char1-squish 15s ease-in-out infinite;
+                
+                transform-origin: bottom;
+    
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 50px;
+                    height: 10px;
+                    background: rgba(255, 255, 255, 0.2);
+                    border-radius: 50%;
+                    top: 10%;
+                    left: 20%;
+                    transform: rotate(-20deg);
+                }
+    
+                .eyes {
+                    display: flex;
+                    gap: 5px;
+                    position: absolute;
+                    top: 20%;
+                    left: 12%;
+                    animation: char1-eyes 15s ease-in-out infinite;
+    
+                    div {
+                        width: 7px;
+                        height: 7px;
+                        border: 2px solid #fff;
+                        border-radius: 30px;
+                        animation: char1-eyes-height 15s ease-in-out infinite;
+                    }
+                }
+    
+                .mouth {
+                    height: 1px;
+                    width: 40px;
+                    border: 2px solid #fff;
+                    border-radius: 30px;
+                    position: absolute;
+                    top: 28%;
+                    left: 25%;
+                    animation: char1-mouth 15s ease-in-out;
+                }
+            }
+    
+            #charactor-2 {
+                margin-left: -20px;
+    
+    
+                .bottom {
+                    display: flex;
+    
+                    div {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 150px;
+                        background-color: rgba(223, 60, 191, 0.778);
+                        animation: char2-body-bottom 15s ease-in-out infinite;
+                    }
+                }
+    
+                .top {
+                    width: 140px;
+                    height: 90px;
+                    border-radius: 150px;
+                    background-color: rgba(223, 60, 191, 0.778);
+                    position: relative;
+                    animation: char2-body-top 15s ease-in-out infinite;
+    
+                    .eyes {
+                        display: flex;
+                        gap: 5px;
+                        position: absolute;
+                        top: 20%;
+                        left: 45%;
+                        animation: char2-eyes 15s ease-in-out infinite;
+    
+                        div {
+                            width: 5px;
+                            height: 5px;
+                            background-color: #fff;
+                            border-radius: 30px;
+                        }
+                    }
+    
+                    .mouth {
+                        height: 2px;
+                        width: 80px;
+                        background-color: #fff;
+                        border-radius: 150px;
+                        position: absolute;
+                        top: 35%;
+                        left: 20%;
+                        animation: char2-mouth 15s ease-in-out infinite;
+                    }
+                }
+            }
+    
+            #charactor-3 {
+                width: 140px;
+                height: 230px;
+                border-radius: 80px;
+                background-color: rgba(19, 43, 165, 0.814);
+                margin-left: -20px;
+                position: relative;
+                animation: char3-body 10s ease-in-out infinite;
+    
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 32px;
+                    background: inherit;
+                    border-radius: 50%;
+                    top: -30px;
+                    left: 60px;
+                    transform: rotate(-30deg);
+                }
+    
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 45px;
+                    background: inherit;
+                    border-radius: 50%;
+                    top: -41px;
+                    left: 85px;
+                    transform: rotate(30deg);
+                }
+    
+                .eyes {
+                    display: flex;
+                    gap: 5px;
+                    position: absolute;
+                    top: 15%;
+                    left: 45%;
+                    animation: char3-eyes 10s ease-in-out infinite;
+    
+                    div {
+                        width: 8px;
+                        height: 25px;
+                        border: 2px solid #fff;
+                        border-radius: 30px;
+                        animation: char3-eyes-height 10s ease-in-out infinite;
+                    }
+                }
+    
+                .mouth {
+                    height: 1px;
+                    width: 20px;
+                    border: 2px solid #fff;
+                    border-radius: 30px;
+                    position: absolute;
+                    top: 30%;
+                    left: 40%;
+                    animation: char3-mouth 10s ease-in-out infinite;
+                }
+            }
+    
+            #charactor-4 {
+                margin-left: -20px;
+    
+    
+                .bottom {
+                    width: 140px;
+                    height: 70px;
+                    border-radius: 80px;
+                    background-color: rgba(255, 128, 0, 0.87);
+                    animation: char4-body-bottom 25s ease-in-out infinite;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 30px;
+                        height: 40px;
+                        background: rgba(255, 255, 255, 0.2);
+                        border-radius: 50%;
+                        top: 75%;
+                        left: 20%;
+                        transform: rotate(-30deg);
+                    }
+                }
+                
+    
+                .top {
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 80px;
+                    background-color: rgba(255, 128, 0, 0.87);
+                    position: relative;
+                    animation: char4-body-top 25s ease-in-out infinite;
+    
+                    .eyes {
+                        display: flex;
+                        gap: 5px;
+                        position: absolute;
+                        top: 30%;
+                        left: 60%;
+                        animation: char4-eyes 25s ease-in-out infinite;
+    
+                        div {
+                            width: 8px;
+                            height: 8px;
+                            border: 2px solid #fff;
+                            border-radius: 30px;
+                            animation: char4-eyes-height 25s ease-in-out infinite;
+                        }
+                    }
+    
+                    .mouth {
+                        height: 1px;
+                        width: 60px;
+                        border: 2px solid #fff;
+                        border-radius: 30px;
+                        position: absolute;
+                        top: 20%;
+                        left: 25%;
+                        animation: char4-mouth 25s ease-in-out infinite;
+                    }
+                }
+            }
+
+        }
+   }
+
 
 #my-skills {
     background-color: abstracts.$rich-black;
     color: #fff;
 
-    h3 {
-        text-transform: uppercase;
-        margin: 60px 60px 40px 0;
-        font-size: 24px;
-        font-weight: 600;
+    #skill-con {
+        padding-top: 100px;
     }
 
     #skill-con .skill p.num_name {
@@ -55,6 +307,10 @@
 #work-show a {
     color: #000;
     text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
     .work-gallery-con {
@@ -91,7 +347,7 @@
 
 
 #work-show {
-    h3#section-title {
+    h2#section-title {
         font-size: 40px;
         margin: 50px auto 20px auto;
     }
@@ -136,9 +392,10 @@
 #about-card {
     padding: 70px 0 80px 0;
 
-    h3 {
-        font-size: 35px;
-            color: abstracts.$coral;
+    p#who {
+        font-size: 40px;
+        color: abstracts.$coral;
+        font-weight: 700;
         }
 
         p {
@@ -174,6 +431,125 @@
 
 @media screen and (min-width:768px) {
 
+    /* HERO SECTION STYLE */
+        #charactors {
+            #charactor-5 {
+                margin-left: -20px;
+                width: 140px;
+                height: 140px;
+                border-radius: 150px;
+                background: linear-gradient(135deg,#c79bff 0%,#9a5bff 40%,#6e2eff 70%,#4a19c9 100%);
+                position: relative;
+                animation: char5-body 15s ease-in-out infinite;
+                transform-origin: bottom;
+                z-index: -1;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    background: inherit;
+                    border-radius: 50%;
+                    top: -30px;
+                    left: 60px;
+                    transform: rotate(-30deg);
+                }
+    
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 60px;
+                    height: 30px;
+                    background: rgba(255, 255, 255, 0.2);
+                    border-radius: 50%;
+                    top: 10%;
+                    left: 20%;
+                }
+    
+    
+                .eyes {
+                    display: flex;
+                    gap: 5px;
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    animation: char5-eyes 15s ease-in-out infinite;
+    
+                    div {
+                        width: 7px;
+                        height: 7px;
+                        border: 2px solid #fff;
+                        border-radius: 30px;
+                    }
+                }
+    
+                .mouth {
+                    height: 20px;
+                    width: 20px;
+                    background-color: #fff;
+                    border-radius: 30px;
+                    position: absolute;
+                    top: 33%;
+                    left: 50%;
+                    animation: char5-mouth 15s ease-in-out infinite;
+                }
+    
+            }
+    
+            #charactor-6 {
+                margin-left: -20px;
+                width: 140px;
+                height: 350px;
+                border-radius: 150px;
+                background: linear-gradient(135deg,#ff8a8a 0%,#ff4a4a 40%,#e02121 70%,#b81414 100%);
+                position: relative;
+                animation: char6-body 15s ease-in-out infinite;
+                transform-origin: bottom;
+                z-index: -2;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    background: rgba(255, 255, 255, 0.2);
+                    border-radius: 50%;
+                    top: 10%;
+                    left: 20%;
+                }
+    
+    
+                .eyes {
+                    display: flex;
+                    gap: 5px;
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    animation: char6-eyes 15s ease-in-out infinite;
+    
+                    div {
+                        width: 10px;
+                        height: 20px;
+                        border: 2px solid #fff;
+                        border-radius: 30px;
+                        animation: char6-eyes-height 15s ease-in-out infinite;
+                    }
+                }
+    
+                .mouth {
+                    height: 20px;
+                    width: 50px;
+                    background-color: #fff;
+                    border-radius: 30px;
+                    position: absolute;
+                    top: 33%;
+                    left: 40%;
+                    animation: char6-mouth 15s ease-in-out infinite;
+                }
+            }
+    
+        }
     #my-skills {
 
         h3 {
@@ -251,6 +627,27 @@
 
 @media screen and (min-width:1200px) {
 
+    #hero {
+    
+            #charactors {
+    
+                #charactor-1,
+                #charactor-2 .top,
+                #charactor-3,
+                #charactor-4,
+                #charactor-4 .bottom,
+                #charactor-4 .top,
+                #charactor-5,
+                #charactor-6 {
+                    width: 200px;
+                }
+    
+                #charactor-2 .bottom div {
+                    width: 100px;
+    
+                }
+            }
+        }
     #my-skills {
 
         h3 {

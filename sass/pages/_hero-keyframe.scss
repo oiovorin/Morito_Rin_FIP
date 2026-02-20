@@ -1,0 +1,1248 @@
+@keyframes char1-body {
+                0% {
+                    height: 340px;
+                    border-radius: 50% 50% 45% 55% / 55% 45% 55% 45%;
+                }
+
+                10% {
+                    height: 340px;
+                }
+
+                15% {
+                    height: 130px;
+                    border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+                }
+
+                40% {
+                    height: 130px;
+                }
+
+                45% {
+                    height: 420px;
+                    border-radius: 45% 55% 50% 50% / 60% 40% 60% 40%;
+                }
+
+                70% {
+                    height: 420px;
+                }
+
+                75% {
+                    height: 200px;
+                    border-radius: 55% 45% 60% 40% / 45% 55% 45% 55%;
+                }
+
+                95% {
+                    height: 200px;
+                }
+
+                100% {
+                    height: 340px;
+                    border-radius: 50% 50% 45% 55% / 55% 45% 55% 45%;
+                }
+                }
+
+@keyframes char1-squish {
+                0%   { transform: scaleX(1); }
+                10%   { transform: scaleX(1); }
+                15%  { transform: scaleX(1.2); }
+                40%  { transform: scaleX(1.2); }
+                45%  { transform: scaleX(0.9); }
+                70%  { transform: scaleX(0.9); }
+                75%  { transform: scaleX(1.1); }
+                95%  { transform: scaleX(1.1); }
+                100% { transform: scaleX(1); }
+            }
+
+    
+@keyframes char1-eyes {
+                    0% {
+                        left: 12%;
+                    }
+    
+                    10% {
+                        left: 12%;
+                    }
+    
+                    15% {
+                        left: 60%;
+                    }
+    
+                    40% {
+                        left: 60%;
+                    }
+    
+                    45% {
+                        left: 20%;
+                    }
+    
+                    70% {
+                        left: 20%;
+                    }
+    
+                    75% {
+                        left: 40%;
+                    }
+    
+                    95% {
+                        left: 40%;
+                    }
+    
+                    100% {
+                        left: 12%;
+                    }
+                }
+    
+                @keyframes char1-eyes-height {
+                    0% {
+                        height: 7px;
+                    }
+    
+                    10% {
+                        height: 7px;
+                    }
+    
+                    15% {
+                        height: 7px;
+                    }
+    
+                    40% {
+                        height: 7px;
+                    }
+    
+                    45% {
+                        height: 25px;
+                    }
+    
+                    70% {
+                        height: 25px;
+                    }
+    
+                    75% {
+                        height: 10px;
+                    }
+    
+                    95% {
+                        height: 10px;
+                    }
+    
+                    100% {
+                        height: 7px;
+                    }
+                }
+    
+@keyframes char1-mouth {
+                    0% {
+                        left: 25%;
+                        top: 28%;
+                        width: 40px;
+                    }
+    
+                    10% {
+                        left: 25%;
+                        top: 28%;
+                        width: 40px;
+                    }
+    
+                    15% {
+                        left: 20%;
+                        top: 33%;
+                        width: 70px;
+                    }
+    
+                    40% {
+                        left: 20%;
+                        top: 33%;
+                        width: 70px;
+                    }
+    
+                    45% {
+                        left: 45%;
+                        top: 28%;
+                        width: 40px;
+                    }
+    
+                    70% {
+                        left: 45%;
+                        top: 28%;
+                        width: 40px;
+                    }
+    
+                    75% {
+                        left: 35%;
+                        top: 28%;
+                        width: 25px;
+                    }
+    
+                    95% {
+                        left: 35%;
+                        top: 28%;
+                        width: 25px;
+                    }
+    
+                    100% {
+                        left: 25%;
+                        top: 28%;
+                        width: 40px;
+                    }
+                }
+
+@keyframes char2-body-bottom {
+                    0% {
+                        height: 40px;
+                    }
+    
+                    30% {
+                        height: 40px;
+                    }
+    
+                    35% {
+                        height: 130px;
+                    }
+    
+                    60% {
+                        height: 130px;
+                    }
+    
+                    65% {
+                        height: 70px;
+                    }
+    
+                    95% {
+                        height: 70px;
+                    }
+    
+                    100% {
+                        height: 40px;
+                    }
+                }
+    
+@keyframes char2-body-top {
+                    0% {
+                        height: 90px;
+                    }
+    
+                    30% {
+                        height: 90px;
+                    }
+    
+                    35% {
+                        height: 160px;
+                    }
+    
+                    60% {
+                        height: 160px;
+                    }
+    
+                    65% {
+                        height: 130px;
+                    }
+    
+                    95% {
+                        height: 130px;
+                    }
+    
+                    100% {
+                        height: 90px;
+                    }
+                }
+    
+@keyframes char2-eyes {
+                    0% {
+                        left: 45%;
+                    }
+    
+                    15% {
+                        left: 45%;
+                    }
+    
+                    20% {
+                        left: 15%;
+                    }
+    
+                    40% {
+                        left: 15%;
+                    }
+    
+                    45% {
+                        left: 70%;
+                    }
+    
+                    60% {
+                        left: 70%;
+                    }
+    
+                    65% {
+                        left: 45%;
+                    }
+    
+                    75% {
+                        left: 45%;
+                    }
+    
+                    80% {
+                        left: 60%;
+                    }
+    
+                    95% {
+                        left: 60%;
+                    }
+    
+                    100% {
+                        left: 45%;
+                    }
+                }
+    
+@keyframes char2-mouth {
+                    0% {
+                        left: 20%;
+                        top: 35%;
+                        height: 3px;
+                        width: 80px;
+                    }
+    
+                    15% {
+                        left: 20%;
+                        top: 35%;
+                        height: 3px;
+                        width: 80px;
+                    }
+    
+                    20% {
+                        left: 10%;
+                        top: 35%;
+                        height: 3px;
+                        width: 40px;
+                    }
+    
+                    40% {
+                        left: 10%;
+                        top: 35%;
+                        height: 3px;
+                        width: 40px;
+                    }
+    
+                    45% {
+                        left: 60%;
+                        top: 30%;
+                        height: 25px;
+                        width: 25px;
+                    }
+    
+                    60% {
+                        left: 60%;
+                        top: 30%;
+                        height: 25px;
+                        width: 25px;
+                    }
+    
+                    65% {
+                        left: 35%;
+                        top: 35%;
+                        height: 3px;
+                        width: 60px;
+                    }
+    
+                    75% {
+                        left: 35%;
+                        top: 35%;
+                        height: 3px;
+                        width: 60px;
+                    }
+    
+                    80% {
+                        left: 50%;
+                        top: 35%;
+                        height: 10px;
+                        width: 30px;
+                    }
+    
+                    95% {
+                        left: 50%;
+                        top: 35%;
+                        height: 10px;
+                        width: 30px;
+                    }
+    
+                    100% {
+                        left: 20%;
+                        top: 35%;
+                        height: 3px;
+                        width: 80px;
+                    }
+                }
+
+@keyframes char3-body {
+                    0% {
+                        height: 230px;
+                    }
+    
+                    5% {
+                        height: 400px;
+                    }
+    
+                    30% {
+                        height: 400px;
+                    }
+    
+                    35% {
+                        height: 100px;
+                    }
+    
+                    60% {
+                        height: 100px;
+                    }
+    
+                    65% {
+                        height: 300px;
+                    }
+    
+                    80% {
+                        height: 300px;
+                    }
+    
+                    85% {
+                        height: 230px;
+                    }
+    
+                    100% {
+                        height: 230px;
+                    }
+                }
+    
+@keyframes char3-eyes {
+                    0% {
+                        left: 45%;
+                    }
+    
+                    5% {
+                        left: 45%;
+                    }
+    
+                    30% {
+                        left: 45%;
+                    }
+    
+                    35% {
+                        left: 55%;
+                    }
+    
+                    60% {
+                        left: 55%;
+                    }
+    
+                    65% {
+                        left: 20%;
+                    }
+    
+                    80% {
+                        left: 20%;
+                    }
+    
+                    85% {
+                        left: 45%;
+                    }
+    
+                    100% {
+                        left: 45%;
+                    }
+                }
+    
+@keyframes char3-eyes-height {
+                    0% {
+                        left: 40%;
+                    }
+    
+                    5% {
+                        height: 25px;
+                    }
+    
+                    30% {
+                        height: 25px;
+                    }
+    
+                    35% {
+                        height: 10px;
+                    }
+    
+                    60% {
+                        height: 10px;
+                    }
+    
+                    65% {
+                        height: 8px;
+                    }
+    
+                    80% {
+                        height: 8px;
+                    }
+    
+                    85% {
+                        height: 25px;
+                    }
+    
+                    100% {
+                        height: 25px;
+                    }
+                }
+    
+@keyframes char3-mouth {
+                    0% {
+                        left: 40%;
+                        width: 20px;
+                        height: 1px;
+                    }
+    
+                    5% {
+                        left: 40%;
+                        width: 20px;
+                        height: 1px;
+                    }
+    
+                    30% {
+                        left: 40%;
+                        width: 20px;
+                        height: 1px;
+                    }
+    
+                    35% {
+                        left: 60%;
+                        width: 35px;
+                        height: 15px;
+                    }
+    
+                    60% {
+                        left: 60%;
+                        width: 35px;
+                        height: 15px;
+                    }
+    
+                    65% {
+                        left: 15%;
+                        width: 15px;
+                        height: 1px;
+                    }
+    
+                    80% {
+                        left: 15%;
+                        width: 15px;
+                        height: 1px;
+                    }
+    
+                    85% {
+                        left: 40%;
+                        width: 20px;
+                        height: 1px;
+                    }
+    
+                    100% {
+                        left: 40%;
+                        width: 20px;
+                        height: 1px;
+                    }
+                }
+
+@keyframes char4-body-bottom {
+                    0% {
+                        height: 70px;
+                    }
+    
+                    13% {
+                        height: 70px;
+                    }
+    
+                    15% {
+                        height: 200px;
+                    }
+    
+                    33% {
+                        height: 200px;
+                    }
+    
+                    35% {
+                        height: 130px;
+                    }
+    
+                    53% {
+                        height: 130px;
+                    }
+    
+                    55% {
+                        height: 230px;
+                    }
+    
+                    68% {
+                        height: 230px;
+                    }
+    
+                    70% {
+                        height: 30px;
+                    }
+    
+                    88% {
+                        height: 30px;
+                    }
+    
+                    90% {
+                        height: 80px;
+                    }
+    
+                    100% {
+                        height: 80px;
+                    }
+                }
+    
+@keyframes char4-body-top {
+                    0% {
+                        height: 140px;
+                    }
+    
+                    13% {
+                        height: 140px;
+                    }
+    
+                    15% {
+                        height: 210px;
+                    }
+    
+                    33% {
+                        height: 210px;
+                    }
+    
+                    35% {
+                        height: 80px;
+                    }
+    
+                    53% {
+                        height: 80px;
+                    }
+    
+                    55% {
+                        height: 230px;
+                    }
+    
+                    68% {
+                        height: 230px;
+                    }
+    
+                    70% {
+                        height: 50px;
+                    }
+    
+                    88% {
+                        height: 50px;
+                    }
+    
+                    90% {
+                        height: 140px;
+                    }
+    
+                    100% {
+                        height: 140px;
+                    }
+                }
+    
+@keyframes char4-eyes {
+                    0% {
+                        left: 60%;
+                    }
+    
+                    15% {
+                        left: 60%;
+                    }
+    
+                    18% {
+                        left: 30%;
+                    }
+    
+                    25% {
+                        left: 30%;
+                    }
+    
+                    28% {
+                        left: 70%;
+                    }
+    
+                    40% {
+                        left: 70%;
+                    }
+    
+                    43% {
+                        left: 60%;
+                    }
+    
+                    55% {
+                        left: 60%;
+                    }
+    
+                    58% {
+                        left: 10%;
+                    }
+    
+                    73% {
+                        left: 10%;
+                    }
+    
+                    75% {
+                        left: 40%;
+                    }
+    
+                    88% {
+                        left: 40%;
+                    }
+    
+                    90% {
+                        left: 60%;
+                    }
+    
+                    100% {
+                        left: 60%;
+                    }
+                }
+    
+@keyframes char4-eyes-height {
+                    0% {
+                        height: 8px;
+                    }
+    
+                    7% {
+                        height: 8px;
+                    }
+    
+                    8% {
+                        height: 1px;
+                    }
+    
+                    9% {
+                        height: 8px;
+                    }
+    
+                    15% {
+                        height: 8px;
+                    }
+    
+                    18% {
+                        height: 20px;
+                    }
+    
+                    25% {
+                        height: 20px;
+                    }
+    
+                    28% {
+                        height: 1px;
+                    }
+    
+                    29% {
+                        height: 8px;
+                    }
+    
+                    40% {
+                        height: 8px;
+                    }
+    
+                    43% {
+                        height: 15px;
+                    }
+    
+                    55% {
+                        height: 15px;
+                    }
+    
+                    58% {
+                        height: 8px;
+                    }
+    
+                    62% {
+                        height: 8px;
+                    }
+    
+                    63% {
+                        height: 1px;
+                    }
+    
+                    64% {
+                        height: 8px;
+                    }
+    
+                    73% {
+                        height: 8px;
+                    }
+    
+                    75% {
+                        height: 10px;
+                    }
+    
+                    88% {
+                        height: 10px;
+                    }
+    
+                    90% {
+                        height: 8px;
+                    }
+    
+                    93% {
+                        height: 8px;
+                    }
+    
+                    94% {
+                        height: 1px;
+                    }
+    
+                    95% {
+                        height: 8px;
+                    }
+    
+                    100% {
+                        height: 8px;
+                    }
+                }
+    
+@keyframes char4-mouth {
+                    0% {
+                        left: 25%;
+                        width: 60px;
+                    }
+    
+                    15% {
+                        left: 25%;
+                        width: 60px;
+                    }
+    
+                    18% {
+                        left: 15%;
+                        width: 30px;
+                    }
+    
+                    25% {
+                        left: 15%;
+                        width: 30px;
+                    }
+    
+                    28% {
+                        left: 35%;
+                        width: 80px;
+                    }
+    
+                    40% {
+                        left: 35%;
+                        width: 80px;
+                    }
+    
+                    43% {
+                        left: 25%;
+                        width: 60px;
+                    }
+    
+                    55% {
+                        left: 25%;
+                        width: 60px;
+                    }
+    
+                    58% {
+                        left: 10%;
+                        width: 90px;
+                    }
+    
+                    73% {
+                        left: 10%;
+                        width: 90px;
+                    }
+                    75% {
+                        left: 25%;
+                        width: 60px;
+                        }
+                    88% {
+                        left: 25%;
+                        width: 60px;
+                        }
+                    90% {
+                    left: 25%;
+                    width: 60px;
+                    }
+                    100% {
+                    left: 25%;
+                    width: 60px;
+                    }
+                    }
+
+                    @keyframes char5-body {
+                    0% {
+                        height: 140px;
+                    }
+    
+                    20% {
+                        height: 140px;
+                    }
+    
+                    25% {
+                        height: 300px;
+                    }
+    
+                    50% {
+                        height: 300px;
+                    }
+    
+                    55% {
+                        height: 70px;
+                    }
+    
+                    70% {
+                        height: 70px;
+                    }
+    
+                    75% {
+                        height: 350px;
+                    }
+    
+                    90% {
+                        height: 350px;
+                    }
+    
+                    95% {
+                        height: 140px;
+                    }
+    
+                    100% {
+                        height: 140px;
+                    }
+                }
+    
+                @keyframes char5-eyes {
+                    0% {
+                        left: 50%;
+                    }
+    
+                    20% {
+                        left: 50%;
+                    }
+    
+                    25% {
+                        left: 20%;
+                    }
+    
+                    50% {
+                        left: 20%;
+                    }
+    
+                    55% {
+                        left: 70%;
+                    }
+    
+                    70% {
+                        left: 70%;
+                    }
+    
+                    75% {
+                        left: 35%;
+                    }
+    
+                    90% {
+                        left: 35%;
+                    }
+    
+                    95% {
+                        left: 50%;
+                    }
+    
+                    100% {
+                        left: 50%;
+                    }
+                }
+    
+                @keyframes char5-mouth {
+                    0% {
+                        height: 20px;
+                        width: 20px;
+                        left: 50%;
+                    }
+    
+                    20% {
+                        height: 20px;
+                        width: 20px;
+                        left: 50%;
+                    }
+    
+                    25% {
+                        height: 50px;
+                        width: 15px;
+                        left: 20%;
+                    }
+    
+                    50% {
+                        height: 50px;
+                        width: 15px;
+                        left: 20%;
+                    }
+    
+                    55% {
+                        height: 3px;
+                        width: 40px;
+                        left: 50%;
+                    }
+    
+                    70% {
+                        height: 3px;
+                        width: 40px;
+                        left: 50%;
+                    }
+    
+                    75% {
+                        height: 10px;
+                        width: 30px;
+                        left: 35%;
+                    }
+    
+                    90% {
+                        height: 10px;
+                        width: 30px;
+                        left: 35%;
+                    }
+    
+                    95% {
+                        height: 20px;
+                        width: 20px;
+                        left: 50%;
+                    }
+    
+                    100% {
+                        height: 20px;
+                        width: 20px;
+                        left: 50%;
+                    }
+                }
+
+                @keyframes char6-body {
+                    0% {
+                        height: 350px;
+                    }
+    
+                    10% {
+                        height: 350px;
+                    }
+    
+                    15% {
+                        height: 50px;
+                    }
+    
+                    40% {
+                        height: 50px;
+                    }
+    
+                    45% {
+                        height: 150px;
+                    }
+    
+                    60% {
+                        height: 150px;
+                    }
+    
+                    65% {
+                        height: 500px;
+                    }
+    
+                    80% {
+                        height: 500px;
+                    }
+    
+                    85% {
+                        height: 140px;
+                    }
+    
+                    90% {
+                        height: 140px;
+                    }
+    
+                    95% {
+                        height: 350px;
+                    }
+    
+                    100% {
+                        height: 350px;
+                    }
+                }
+    
+                @keyframes char6-eyes {
+                    0% {
+                        left: 50%;
+                    }
+    
+                    10% {
+                        left: 50%;
+                    }
+    
+                    15% {
+                        left: 80%;
+                    }
+    
+                    40% {
+                        left: 80%;
+                    }
+    
+                    45% {
+                        left: 30%;
+                    }
+    
+                    60% {
+                        left: 30%;
+                    }
+    
+                    65% {
+                        left: 60%;
+                    }
+    
+                    80% {
+                        left: 60%;
+                    }
+    
+                    85% {
+                        left: 20%;
+                    }
+    
+                    90% {
+                        left: 20%;
+                    }
+    
+                    95% {
+                        left: 50%;
+                    }
+    
+                    100% {
+                        left: 50%;
+                    }
+                }
+    
+                @keyframes char6-eyes-height {
+                    0% {
+                        width: 10px;
+                        height: 20px;
+                    }
+    
+                    10% {
+                        width: 10px;
+                        height: 20px;
+                    }
+    
+                    15% {
+                        width: 4px;
+                        height: 4px;
+                    }
+    
+                    40% {
+                        width: 4px;
+                        height: 4px;
+                    }
+    
+                    45% {
+                        width: 7px;
+                        height: 4px;
+                    }
+    
+                    60% {
+                        width: 7px;
+                        height: 4px;
+                    }
+    
+                    65% {
+                        width: 10px;
+                        height: 30px;
+                    }
+    
+                    80% {
+                        width: 10px;
+                        height: 30px;
+                    }
+    
+                    85% {
+                        width: 4px;
+                        height: 4px;
+                    }
+    
+                    90% {
+                        width: 4px;
+                        height: 4px;
+                    }
+    
+                    95% {
+                        width: 10px;
+                        height: 20px;
+                    }
+    
+                    100% {
+                        width: 10px;
+                        height: 20px;
+                    }
+                }
+    
+                @keyframes char6-mouth {
+                    0% {
+                        left: 40%;
+                        height: 20px;
+                        width: 50px;
+                    }
+    
+                    10% {
+                        left: 40%;
+                        height: 20px;
+                        width: 50px;
+                    }
+    
+                    15% {
+                        left: 70%;
+                        height: 3px;
+                        width: 20px;
+                    }
+    
+                    40% {
+                        left: 70%;
+                        height: 3px;
+                        width: 20px;
+                    }
+    
+                    45% {
+                        left: 30%;
+                        height: 20px;
+                        width: 20px;
+                    }
+    
+                    60% {
+                        left: 30%;
+                        height: 20px;
+                        width: 20px;
+                    }
+    
+                    65% {
+                        left: 40%;
+                        height: 10px;
+                        width: 50px;
+                    }
+    
+                    80% {
+                        left: 40%;
+                        height: 10px;
+                        width: 50px;
+                    }
+    
+                    85% {
+                        left: 20%;
+                        height: 20px;
+                        width: 20px;
+                    }
+    
+                    90% {
+                        left: 20%;
+                        height: 20px;
+                        width: 20px;
+                    }
+    
+                    95% {
+                        left: 40%;
+                        height: 20px;
+                        width: 50px;
+                    }
+    
+                    100% {
+                        left: 40%;
+                        height: 20px;
+                        width: 50px;
+                    }
+                }
